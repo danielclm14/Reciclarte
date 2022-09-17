@@ -1,6 +1,9 @@
 Passos a seguir:
 
 clonar, dar um npm install, npm install node-sass e depois npm start :D
+![image](https://user-images.githubusercontent.com/50914198/190876842-ac73ade0-75df-424b-9137-b227b0697d8d.png)
+
+
 
 
 
