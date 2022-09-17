@@ -26,6 +26,7 @@ import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 import MiniStatisticsCard from "examples/Cards/StatisticsCards/MiniStatisticsCard";
+
 import ReportsBarChart from "examples/Charts/BarCharts/ReportsBarChart";
 import GradientLineChart from "examples/Charts/LineCharts/GradientLineChart";
 
@@ -40,7 +41,16 @@ import OrderOverview from "layouts/dashboard/components/OrderOverview";
 
 // Data
 import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
-import gradientLineChartData from "layouts/dashboard/data/gradientLineChartData";
+//import gradientLineChartData from "layouts/dashboard/data/gradientLineChartData";
+
+//igor 
+import CardItem from "examples/Cards/StatisticsCards/CardItem/CardItem";
+import pinus1 from '../../imagens/pinus1.png';
+
+import pinus3 from '../../imagens/pinus3.jpg';
+import pinus4 from '../../imagens/pinus4.jpg';
+import pinus5 from '../../imagens/pinus5.jpg';
+import pinus6 from '../../imagens/pinus6.jpg';
 
 function Dashboard() {
   const { size } = typography;
@@ -53,43 +63,47 @@ function Dashboard() {
         <SoftBox mb={3}>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6} xl={3}>
-              <MiniStatisticsCard
-                title={{ text: "today's money" }}
-                count="$53,000"
-                percentage={{ color: "success", text: "+55%" }}
-                icon={{ color: "info", component: "paid" }}
-              />
+            <CardItem imagem={pinus3} titulo="Madereireira X" tipo="Pinus " distancia=" 5 KM" comprimento="2x3x4" /> 
             </Grid>
             <Grid item xs={12} sm={6} xl={3}>
-              <MiniStatisticsCard
+            <CardItem imagem={pinus6} titulo="Madereireira Y" tipo="Pinus " distancia=" 10 KM" comprimento="4x3x2" />
+
+              {/* <MiniStatisticsCard
                 title={{ text: "today's users" }}
                 count="2,300"
                 percentage={{ color: "success", text: "+3%" }}
                 icon={{ color: "info", component: "public" }}
-              />
+              /> */}
             </Grid>
             <Grid item xs={12} sm={6} xl={3}>
-              <MiniStatisticsCard
-                title={{ text: "new clients" }}
-                count="+3,462"
-                percentage={{ color: "error", text: "-2%" }}
-                icon={{ color: "info", component: "emoji_events" }}
-              />
+            <CardItem imagem={pinus4} titulo="Madereireira Z" tipo="Pinus " distancia=" 15 KM" comprimento="5x4x3" />
+
             </Grid>
             <Grid item xs={12} sm={6} xl={3}>
-              <MiniStatisticsCard
-                title={{ text: "sales" }}
-                count="$103,430"
-                percentage={{ color: "success", text: "+5%" }}
-                icon={{
-                  color: "info",
-                  component: "shopping_cart",
-                }}
-              />
+            <CardItem imagem={pinus5} titulo="Madereireira R" tipo="Pinus " distancia=" 20 KM" comprimento="1x2x3" />
+
             </Grid>
+            <Grid item xs={12} sm={6} xl={3}>
+            <CardItem imagem={pinus3} titulo="Madereireira X" tipo="Pinus " distancia=" 5 KM" comprimento="2x3x4" /> 
+
+            </Grid>
+            
+            <Grid item xs={12} sm={6} xl={3}>
+            <CardItem imagem={pinus6} titulo="Madereireira Y" tipo="Pinus " distancia=" 10 KM" comprimento="4x3x2" />
+
+            </Grid>
+            <Grid item xs={12} sm={6} xl={3}>
+            <CardItem imagem={pinus4} titulo="Madereireira Z" tipo="Pinus " distancia=" 15 KM" comprimento="5x4x3" />
+
+            </Grid>
+            <Grid item xs={12} sm={6} xl={3}>
+            <CardItem imagem={pinus5} titulo="Madereireira R" tipo="Pinus " distancia=" 20 KM" comprimento="1x2x3" />
+
+            </Grid>
+
           </Grid>
         </SoftBox>
-        <SoftBox mb={3}>
+        {/* <SoftBox mb={3}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={7}>
               <BuildByDevelopers />
@@ -98,8 +112,8 @@ function Dashboard() {
               <WorkWithTheRockets />
             </Grid>
           </Grid>
-        </SoftBox>
-        <SoftBox mb={3}>
+        </SoftBox> */}
+        {/* <SoftBox mb={3}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={5}>
               <ReportsBarChart
@@ -134,17 +148,17 @@ function Dashboard() {
               />
             </Grid>
           </Grid>
-        </SoftBox>
-        <Grid container spacing={3}>
+        </SoftBox> */}
+        {/* <Grid container spacing={3}>
           <Grid item xs={12} md={6} lg={8}>
             <Projects />
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
             <OrderOverview />
           </Grid>
-        </Grid>
+        </Grid> */}
       </SoftBox>
-      <Footer />
+      {/* <Footer /> */}
     </DashboardLayout>
   );
 }
