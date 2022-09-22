@@ -24,58 +24,60 @@ import SoftTypography from "components/SoftTypography";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
-import Table from "examples/Tables/Table";
+
 
 // Data
-import authorsTableData from "layouts/tables/data/authorsTableData";
-import projectsTableData from "layouts/tables/data/projectsTableData";
+import Grid from "@mui/material/Grid";
+import pinus3 from "../../imagens/pinus3.jpg";
+//import DefaultProjectCard from "../../examples/Cards/ProjectCards/DefaultProjectCard"
+import Descricao1 from "../../examples/Cards/ProjectCards/Descricao1/Descricao1";
+import Descricao from "../../examples/Cards/StatisticsCards/Descricao/Descricao";
+
 
 function Tables() {
-  const { columns, rows } = authorsTableData;
-  const { columns: prCols, rows: prRows } = projectsTableData;
+  
 
   return (
     <DashboardLayout>
       <DashboardNavbar />
       <SoftBox py={3}>
-        <SoftBox mb={3}>
-          <Card>
-            <SoftBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
-              <SoftTypography variant="h6">Authors table</SoftTypography>
-            </SoftBox>
-            <SoftBox
-              sx={{
-                "& .MuiTableRow-root:not(:last-child)": {
-                  "& td": {
-                    borderBottom: ({ borders: { borderWidth, borderColor } }) =>
-                      `${borderWidth[1]} solid ${borderColor}`,
-                  },
-                },
-              }}
-            >
-              <Table columns={columns} rows={rows} />
-            </SoftBox>
-          </Card>
-        </SoftBox>
-        <Card>
-          <SoftBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
-            <SoftTypography variant="h6">Projects table</SoftTypography>
-          </SoftBox>
-          <SoftBox
-            sx={{
-              "& .MuiTableRow-root:not(:last-child)": {
-                "& td": {
-                  borderBottom: ({ borders: { borderWidth, borderColor } }) =>
-                    `${borderWidth[1]} solid ${borderColor}`,
-                },
-              },
-            }}
-          >
-            <Table columns={prCols} rows={prRows} />
-          </SoftBox>
-        </Card>
+      
+        
+          {/* <SoftBox display="flex" justifyContent="space-between" alignItems="center" px={1}>
+            <SoftTypography variant="h6">Descrição do Item</SoftTypography>
+          </SoftBox> */}
+                <Grid container spacing={3}>
+                  <Grid item xs={12} md={2} xl={3}>
+                      {/* <Descricao1
+                              image={pinus3}
+                              // label="project #2"
+                              title="Madereira X"
+                              action={{
+                                type: "internal",
+                                route: "/tables",
+                              }}
+                              description="A madereira X é top"
+                              
+                              endereco="Endereço"
+                              tipo="Pinus"
+                              comprimento="2x3x4"
+                          
+                            /> */}
+                            <Descricao 
+                            imagem={pinus3} 
+                            titulo="Madereireira X"
+                            endereco="Endereço" 
+                            tipo="Pinus " 
+                            distancia=" 5 KM" 
+                            comprimento="2x3x4"
+                            
+                            />
+                  </Grid>
+                </Grid>
+                
+        
       </SoftBox>
-      <Footer />
+      
     </DashboardLayout>
   );
 }
