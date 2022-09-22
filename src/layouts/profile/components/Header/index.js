@@ -31,7 +31,6 @@ import SoftAvatar from "components/SoftAvatar";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 
 // Soft UI Dashboard React icons
-import Cube from "examples/Icons/Cube";
 import Document from "examples/Icons/Document";
 import Settings from "examples/Icons/Settings";
 
@@ -41,6 +40,7 @@ import breakpoints from "assets/theme/base/breakpoints";
 // Images
 import burceMars from "assets/images/bruce-mars.jpg";
 import curved0 from "assets/images/curved-images/curved0.jpg";
+import lindomar from "../../../../imagens/lindomar.png"
 
 function Header() {
   const [tabsOrientation, setTabsOrientation] = useState("horizontal");
@@ -80,7 +80,7 @@ function Header() {
         sx={{
           backgroundImage: ({ functions: { rgba, linearGradient }, palette: { gradients } }) =>
             `${linearGradient(
-              rgba(gradients.info.main, 0.6),
+              rgba(gradients.info.main, 1.0),
               rgba(gradients.info.state, 0.6)
             )}, url(${curved0})`,
           backgroundSize: "cover",
@@ -103,7 +103,7 @@ function Header() {
         <Grid container spacing={3} alignItems="center">
           <Grid item>
             <SoftAvatar
-              src={burceMars}
+              src={lindomar}
               alt="profile-image"
               variant="rounded"
               size="xl"
@@ -113,10 +113,10 @@ function Header() {
           <Grid item>
             <SoftBox height="100%" mt={0.5} lineHeight={1}>
               <SoftTypography variant="h5" fontWeight="medium">
-                Alex Thompson
+                Lindomar
               </SoftTypography>
               <SoftTypography variant="button" color="text" fontWeight="medium">
-                CEO / Co-Founder
+                Artesão
               </SoftTypography>
             </SoftBox>
           </Grid>
@@ -128,9 +128,9 @@ function Header() {
                 onChange={handleSetTabValue}
                 sx={{ background: "transparent" }}
               >
-                <Tab label="App" icon={<Cube />} />
-                <Tab label="Message" icon={<Document />} />
-                <Tab label="Settings" icon={<Settings />} />
+                
+                <Tab label="Mensagens" icon={<Document />} />
+                <Tab label="Configurações" icon={<Settings />} />
               </Tabs>
             </AppBar>
           </Grid>
