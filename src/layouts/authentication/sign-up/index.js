@@ -43,8 +43,8 @@ function SignUp() {
 
   return (
     <BasicLayout
-      title="Welcome!"
-      description="Use these awesome forms to login or create new account in your project for free."
+      title="Bem-vindo!"
+      description="Use esses formulários incríveis para fazer login ou criar uma nova conta em seu projeto gratuitamente."
       image={curved6}
     >
       <Card>
