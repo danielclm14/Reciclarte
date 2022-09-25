@@ -168,7 +168,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
                     fontWeight="medium"
                     color={light ? "white" : "dark"}
                   >
-                    Sign in
+                    Entrar
                   </SoftTypography>
                 </IconButton>
               </Link>
