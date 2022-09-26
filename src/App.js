@@ -46,7 +46,7 @@ import routes from "routes";
 import { useSoftUIController, setMiniSidenav, setOpenConfigurator } from "context";
 
 // Images
-import brand from "assets/images/logo-ct1.png";
+import brand from "assets/images/logo-ctlol.png";
 
 export default function App() {
   const [controller, dispatch] = useSoftUIController();
