@@ -134,6 +134,7 @@ export default class PopUp extends React.Component {
     'background-color': 'white',
     border: '2px black solid',
     'border-radius': '5px',
+    color: 'black',
   
     display: 'flex',
     'flex-direction': 'row',
@@ -148,6 +149,7 @@ export default class PopUp extends React.Component {
     'background-color': 'transparent',
     'font-weight': '500',
     'font-size': '20px',
+    color: 'black',
     border: 'none',
     padding: '0px',
     margin: '0px',
@@ -165,7 +167,7 @@ export default class PopUp extends React.Component {
     return (      
       <div style={styles_bkg}>
       <div style={styles_box}>
-        <div style={{position: 'absolute'}}> <button onClick={this.fechar} style={style_fechar}>⨉</button> </div>
+        {/* <div style={{position: 'absolute'}}> <button onClick={this.fechar} style={style_fechar}>⨉</button> </div> */}
           Escolha a data
           <input
               type="date"
@@ -183,7 +185,7 @@ export default class PopUp extends React.Component {
           </div>
 
           <br/>
-          <button style={styles_btn} onClick={this.submeter}>Submeter</button>
+          <button style={styles_btn} onClick={this.submeter}>Reservar</button>
       </div>
     </div>
     );
