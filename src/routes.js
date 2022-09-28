@@ -37,6 +37,7 @@ Coded by www.creative-tim.com
 
 // Soft UI Dashboard React layouts
 import Home from "layouts/home";
+import Inserir from "layouts/inserirItem"
 import Itens from "layouts/itens";
 import Billing from "layouts/billing";
 //import VirtualReality from "layouts/virtual-reality";
@@ -63,6 +64,15 @@ const routes = [
     route: "/home",
     icon: <Shop size="12px" />,
     component: <Home />,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Inserir Madeira",
+    key: "inserir",
+    route: "/inserirItem",
+    icon: <Shop size="12px" />,
+    component: <Inserir />,
     noCollapse: true,
   },
   {
