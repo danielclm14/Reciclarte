@@ -149,7 +149,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
           <SoftBox sx={(theme) => navbarRow(theme, { isMini })}>
             <SoftBox pr={1}>
               <SoftInput
-                placeholder="pesquisa"
+                placeholder="pesquisar"
                 icon={{ component: "search", direction: "left" }}
               />
             </SoftBox>

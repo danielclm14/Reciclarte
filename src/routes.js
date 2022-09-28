@@ -3,7 +3,7 @@
 * Soft UI Dashboard React - v4.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-react
+* Product Page: https://www.creative-tim.com/product/soft-ui-home-react
 * Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -36,12 +36,12 @@ Coded by www.creative-tim.com
 */
 
 // Soft UI Dashboard React layouts
-import Dashboard from "layouts/dashboard";
-import Tables from "layouts/tables";
+import Home from "layouts/home";
+import Itens from "layouts/itens";
 import Billing from "layouts/billing";
 //import VirtualReality from "layouts/virtual-reality";
 //import RTL from "layouts/rtl";
-import Profile from "layouts/profile";
+import Perfil from "layouts/perfil";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
 
@@ -58,31 +58,31 @@ import Cube from "examples/Icons/Cube";
 const routes = [
   {
     type: "collapse",
-    name: "Madereiras",
-    key: "dashboard",
-    route: "/dashboard",
+    name: "Madeiras",
+    key: "home",
+    route: "/home",
     icon: <Shop size="12px" />,
-    component: <Dashboard />,
+    component: <Home />,
     noCollapse: true,
   },
   {
-    type: "collapse",
-    name: "Descrição do Item",
-    key: "tables",
-    route: "/tables",
-    icon: <Office size="12px" />,
-    component: <Tables />,
-    noCollapse: true,
+    // type: "collapse",
+    name: "Itens",
+    key: "itens",
+    route: "/itens",
+    // icon: <Office size="12px" />,
+    component: <Itens />,
+    // noCollapse: true,
   },
-  {
-    type: "collapse",
-    name: "Pagamento",
-    key: "billing",
-    route: "/billing",
-    icon: <CreditCard size="12px" />,
-    component: <Billing />,
-    noCollapse: true,
-  },
+  // {
+  //   type: "collapse",
+  //   name: "Pagamento",
+  //   key: "billing",
+  //   route: "/billing",
+  //   icon: <CreditCard size="12px" />,
+  //   component: <Billing />,
+  //   noCollapse: true,
+  // },
   // {
   //   type: "collapse",
   //   name: "Virtual Reality",
@@ -105,10 +105,10 @@ const routes = [
   {
     type: "collapse",
     name: "Perfil",
-    key: "profile",
-    route: "/profile",
+    key: "perfil",
+    route: "/perfil",
     icon: <CustomerSupport size="12px" />,
-    component: <Profile />,
+    component: <Perfil />,
     noCollapse: true,
   },
   {

@@ -32,9 +32,12 @@ import pinus3 from "../../imagens/pinus3.jpg";
 //import DefaultProjectCard from "../../examples/Cards/ProjectCards/DefaultProjectCard"
 import Descricao1 from "../../examples/Cards/ProjectCards/Descricao1/Descricao1";
 import Descricao from "../../examples/Cards/StatisticsCards/Descricao/Descricao";
+import PopUp from "../../components/PopUp/PopUp";
+import Botao from "../../components/SoftButton/SoftButtonRoot";
+import SoftButton from "../../components/SoftButton";
 
 
-function Tables() {
+function Itens() {
   
 
   return (
@@ -72,6 +75,11 @@ function Tables() {
                             comprimento="2x3x4"
                             
                             />
+        
+                  </Grid>
+                  <Grid item xs={12} md={2} xl={3}>
+                  {/* <PopUp /> */}
+
                   </Grid>
                 </Grid>
                 
@@ -82,4 +90,4 @@ function Tables() {
   );
 }
 
-export default Tables;
+export default Itens;

@@ -30,6 +30,9 @@ export default props  =>
                 Sábado: 09:00 - 12:00<br />
                 </p>
             </div>
+            <div className="botao">
+            
+            </div>
         </div>
     </div>
     </div>

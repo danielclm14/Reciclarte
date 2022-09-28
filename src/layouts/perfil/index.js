@@ -19,7 +19,7 @@ import DefaultProjectCard from "examples/Cards/ProjectCards/DefaultProjectCard";
 import PlaceholderCard from "examples/Cards/PlaceholderCard";
 
 // Overview page components
-import Header from "layouts/profile/components/Header";
+import Header from "layouts/perfil/components/Header";
 
 // Data
 
@@ -89,7 +89,7 @@ function Overview() {
                   description="A madereira X é top"
                   action={{
                     type: "internal",
-                    route: "/tables",
+                    route: "/",
                     color: "info",
                     label: "Mais informações",
                   }}
