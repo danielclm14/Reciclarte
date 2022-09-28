@@ -1,5 +1,6 @@
 import React from "react"
 import "./Descricao.scss"
+import Botao from "../../../../components/Botao/Botao"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default props  => 
@@ -30,8 +31,11 @@ export default props  =>
                 Sábado: 09:00 - 12:00<br />
                 </p>
             </div>
+            {/* <div className="botao">
+            <button>Reservar</button>
+            </div> */}
             <div className="botao">
-            
+            <Botao />
             </div>
         </div>
     </div>
