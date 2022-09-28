@@ -104,7 +104,7 @@ function Header() {
           <Grid item>
             <SoftAvatar
               src={lindomar}
-              alt="profile-image"
+              alt="perfil-imag"
               variant="rounded"
               size="xl"
               shadow="sm"

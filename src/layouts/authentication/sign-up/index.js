@@ -104,7 +104,7 @@ function SignUp() {
                   fontWeight="bold"
                   textGradient
                 >
-                  Sign in
+                  Entrar
                 </SoftTypography>
               </SoftTypography>
             </SoftBox>

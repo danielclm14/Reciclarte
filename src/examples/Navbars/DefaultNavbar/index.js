@@ -107,7 +107,7 @@ function DefaultNavbar({ transparent, light, action }) {
           />
           <DefaultNavbarLink
             icon="key"
-            name="sign in"
+            name="Entrar"
             route="/authentication/sign-in"
             light={light}
           />
