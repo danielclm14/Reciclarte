@@ -1,40 +1,68 @@
+import React, { Component }  from 'react';
 import {useState} from 'react';
 import "./Botao.css"
 import PopUp from "../PopUp/PopUp";
 
 
-export default function App() {
-  const [isShown, setIsShown] = useState(false);
+export default class Botao extends React.Component {
+  
+  state={hidden: true};
 
-  const handleClick = event => {
-    // 👇️ toggle shown state
-    setIsShown(current => !current);
+  constructor() {
+    super();
+    this.abrir = this.abrir.bind(this);
+    this.fechar = this.fechar.bind(this);
+  }
 
-    // 👇️ or simply set it to true
-    // setIsShown(true);
-  };
+  abrir() {
+    this.setState({hidden: false});
+  }
 
-  return (
-    <div>
-      <button onClick={handleClick}>Reservar</button>
+  fechar(param) {
+    //param = {data, quantidade}
+    this.setState({hidden: true});
 
-      {/* 👇️ show elements on click */}
-      {isShown && (
+    //so fecha o componente
+    if(param.quantidade == 0)
+      return;
+    
+    //realiza reserva
+    //window.alert("data:<"+param.data+">\nquantidade: <"+param.quantidade+">");
+  }
+
+  render() {
+      return (
         <div>
-          <h2>Reserve na tela a seguir</h2>
-        </div>
-      )}
+          <button onClick={this.abrir}>Reservar</button>
 
-      {/* 👇️ show component on click */}
-      {isShown && <Box />}
-    </div>
-  );
+          {/*state.hidden define a instancia do popup*/}
+          {this.state.hidden?"":<PopUp fechar={this.fechar}/>}
+        </div>
+      );
+  }
 }
 
-function Box() {
-  return (
-    <div>
-      <PopUp />
-    </div>
-  );
+
+class Box extends React.Component {
+
+  state={hidden: false};
+
+  constructor() {
+    super();
+    
+    this.fechar = this.fechar.bind(this);
+  }
+
+  fechar(param) {
+    this.setState({hidden: true});
+  }
+
+  render() {
+    return (
+      <div>
+        wasd
+        {this.state.hidden?"":<PopUp fechar={this.fechar}/>}
+      </div>
+    );
+  }
 }

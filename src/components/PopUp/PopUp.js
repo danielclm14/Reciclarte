@@ -113,20 +113,22 @@ export default class PopUp extends React.Component {
 
   var style_fechar =  {
       'background-color': 'brown',
+      
       color: 'white',
       border: 'none',
       'margin-top': '20px',
       position: 'absolute',
     
-      top: '-130px',
-      left: '155px',
+      top: '-135px',
+      left: '135px',
     
       'font-size': '15px',
       'font-weight': '500',
+      
       width: '25px',
       height: '25px',
     
-      /*padding: 5px;*/
+      padding: "0px",
       'border-radius': '5px',
   }
 
@@ -167,7 +169,7 @@ export default class PopUp extends React.Component {
     return (      
       <div style={styles_bkg}>
       <div style={styles_box}>
-        {/* <div style={{position: 'absolute'}}> <button onClick={this.fechar} style={style_fechar}>⨉</button> </div> */}
+        <div style={{position: 'absolute'}}> <button onClick={this.fechar} style={style_fechar}>⨉</button> </div>
           Escolha a data
           <input
               type="date"
