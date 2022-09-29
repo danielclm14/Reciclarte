@@ -41,28 +41,3 @@ export default class Botao extends React.Component {
       );
   }
 }
-
-
-class Box extends React.Component {
-
-  state={hidden: false};
-
-  constructor() {
-    super();
-    
-    this.fechar = this.fechar.bind(this);
-  }
-
-  fechar(param) {
-    this.setState({hidden: true});
-  }
-
-  render() {
-    return (
-      <div>
-        wasd
-        {this.state.hidden?"":<PopUp fechar={this.fechar}/>}
-      </div>
-    );
-  }
-}
