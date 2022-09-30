@@ -1,78 +1,83 @@
-.caixa1{
-    color:#67748E;
-    // border: 1px solid red;
-    height: auto;
-    // background-color: #82D616;
+.corpo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    gap: 30px;
+  }
 
-    .imagem1{
-        width: 154px;
-        height: 151px;
-        border-radius: 3px;
-        margin-bottom: 5px;
-        margin-right: 20px;
-        
-        img{
-            width: 154px;
-            height: 151px;
-            border-radius: 5px;
+.topbar{
+    color:#67748E;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+
+    img{
+        width: clamp(165px, 30vw, 250px);
+        height: clamp(165px, 30vw, 250px);
+        border-radius: 5px;
+    }
+
+    .descr{
+        display: flex;
+        flex-direction: column;
+        width: clamp(10px ,30vw, 300px);
+    }
+
+}
+
+.btnReserva {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}    
+
+
+h1 {
+    color: black;
+    font-size: 20px;
+    //width: 90%;
+}
+
+h2{
+    font-size: 15px; 
+    //width: 90%;
+}
+h3{
+    font-size: 15px;
+    //width: 90%;
+}
+p{
+    font-size: 12px;
+    //width: 90%;
+}
+
+
+.perguntas1 {
+    width: 300px;
+}
+
+@media only screen and (max-width: 770px) {
+    .corpo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .descr {
+            width: 100%;
         }
 
     }
 
-    h1{
-        color: black;
-        font-size: 20px;
+    .btnReserva {
+        display: block;
+        margin: 15px 5px;
+    }    
+
+    .perguntas1 {
+        width: 100%;
     }
-
-    h2{
-        font-size: 15px; 
-    }
-    h3{
-        font-size: 15px;
-    }
-    p{
-        font-size: 12px;
-    }
-        
-    
-    
-
-
-
-
-
-}
-
-
-
-
-
-
-
-/*
-
-.tituloMadereira{
-    font-size: 16px;
-    font-weight: 400;
-} 
-
-.tipoMadeira{
-        font-size: 12px;
-        font-weight: 400;
-}
-
-.comprimentoMadeira{
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.distanciaMadeira{
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.ponto {
-    font-size: 16px;
-    font-weight: 900;
-}
-*/
+  }

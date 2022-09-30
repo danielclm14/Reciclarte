@@ -23,7 +23,7 @@ export default class Botao extends React.Component {
     this.setState({hidden: true});
 
     //so fecha o componente
-    if(param.quantidade == 0)
+    if(param.quantidade <= 0)
       return;
     
     //realiza reserva
