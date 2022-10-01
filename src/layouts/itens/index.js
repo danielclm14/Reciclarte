@@ -44,46 +44,14 @@ function Itens() {
     <DashboardLayout>
       <DashboardNavbar />
       <SoftBox py={3}>
-      
-        
-          {/* <SoftBox display="flex" justifyContent="space-between" alignItems="center" px={1}>
-            <SoftTypography variant="h6">Descrição do Item</SoftTypography>
-          </SoftBox> */}
-                <Grid container spacing={3}>
-                  <Grid item xs={12} md={2} xl={3}>
-                      {/* <Descricao1
-                              image={pinus3}
-                              // label="project #2"
-                              title="Madereira X"
-                              action={{
-                                type: "internal",
-                                route: "/tables",
-                              }}
-                              description="A madereira X é top"
-                              
-                              endereco="Endereço"
-                              tipo="Pinus"
-                              comprimento="2x3x4"
-                          
-                            /> */}
-                            <Descricao 
-                            imagem={pinus3} 
-                            titulo="Madereireira X"
-                            endereco="Endereço" 
-                            tipo="Pinus " 
-                            distancia=" 5 KM" 
-                            comprimento="2x3x4"
-                            
-                            />
-        
-                  </Grid>
-                  <Grid item xs={12} md={2} xl={3}>
-                  {/* <PopUp /> */}
-
-                  </Grid>
-                </Grid>
-                
-        
+          <Descricao 
+              imagem={pinus3} 
+              titulo="Madereireira X"
+              endereco="Endereço" 
+              tipo="Pinus " 
+              distancia=" 5 KM" 
+              comprimento="2x3x4"/>
+              
       </SoftBox>
       
     </DashboardLayout>
