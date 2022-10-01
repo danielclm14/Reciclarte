@@ -24,7 +24,8 @@ import Header from "layouts/perfilEmpresa/components/Header";
 // Data
 
 // Images
-import pinus3 from "imagens/pinus3.jpg";
+//import pinus3 from "imagens/pinus3.jpg";
+import pinus6 from "imagens/pinus6.jpg";
 
 function Overview() {
   return (
@@ -83,13 +84,13 @@ function Overview() {
             <Grid container spacing={3}>
               <Grid item xs={12} md={6} xl={3}>
                 <DefaultProjectCard
-                  image={pinus3}
+                  image={pinus6}
                   // label="project #2"
-                  title="Madereira X"
-                  description="A madereira X é top"
+                  title="Madereira Y"
+                  description="A madereira Y é top"
                   action={{
                     type: "internal",
-                    route: "/itens",
+                    route: "/itensY",
                     color: "info",
                     label: "Mais informações",
                   }}
