@@ -30,6 +30,7 @@ import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Grid from "@mui/material/Grid";
 //-------
 import Formulario from "../../components/Formulario/formulario"
+import Formulario1 from "../../components/Formulario1/Formulario1"
 
 function Inserir() {
   
@@ -39,7 +40,7 @@ function Inserir() {
       <SoftBox py={3}>
                 <Grid container spacing={3}>
                   <Grid item xs={12} md={2} xl={3}>
-                  <Formulario />
+                  <Formulario1 />
                   </Grid>
                 </Grid>
       </SoftBox>
