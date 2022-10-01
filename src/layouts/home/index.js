@@ -85,7 +85,7 @@ function Home() {
 
             </Grid>
             <Grid item xs={12} sm={6} xl={3}>
-            <CardItem imagem={pinus3} titulo="Madereireira X" tipo="Pinus " distancia=" 5 KM" comprimento="2x3x4" /> 
+            <a href="/itens"><CardItem imagem={pinus3} titulo="Madereireira X" tipo="Pinus " distancia=" 5 KM" comprimento="2x3x4" /></a> 
 
             </Grid>
             

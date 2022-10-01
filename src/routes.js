@@ -43,6 +43,7 @@ import Billing from "layouts/billing";
 //import VirtualReality from "layouts/virtual-reality";
 //import RTL from "layouts/rtl";
 import Perfil from "layouts/perfil";
+import PerfilEmpresa from "layouts/perfilEmpresa";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
 
@@ -75,7 +76,7 @@ const routes = [
     component: <Inserir />,
     noCollapse: true,
   },
-  {
+  { //descriçao do item madereira x
     // type: "collapse",
     name: "Itens",
     key: "itens",
@@ -84,42 +85,25 @@ const routes = [
     component: <Itens />,
     // noCollapse: true,
   },
-  // {
-  //   type: "collapse",
-  //   name: "Pagamento",
-  //   key: "billing",
-  //   route: "/billing",
-  //   icon: <CreditCard size="12px" />,
-  //   component: <Billing />,
-  //   noCollapse: true,
-  // },
-  // {
-  //   type: "collapse",
-  //   name: "Virtual Reality",
-  //   key: "virtual-reality",
-  //   route: "/virtual-reality",
-  //   icon: <Cube size="12px" />,
-  //   component: <VirtualReality />,
-  //   noCollapse: true,
-  // },
-  // {
-  //   type: "collapse",
-  //   name: "RTL",
-  //   key: "rtl",
-  //   route: "/rtl",
-  //   icon: <Settings size="12px" />,
-  //   component: <RTL />,
-  //   noCollapse: true,
-  // },
   { type: "title", title: "página da conta", key: "account-pages" },
-  {
+  {//perfil artesao
     type: "collapse",
-    name: "Perfil",
+    name: "Perfil Artesão",
     key: "perfil",
     route: "/perfil",
     icon: <CustomerSupport size="12px" />,
     component: <Perfil />,
     noCollapse: true,
+  },
+  {//perfil empresa
+    type: "collapse",
+    name: "Perfil Empresa",
+    key: "perfilEmpresa",
+    route: "/perfilEmpresa",
+    icon: <CustomerSupport size="12px" />,
+    component: <PerfilEmpresa />,
+    noCollapse: true,
+
   },
   {
     type: "collapse",

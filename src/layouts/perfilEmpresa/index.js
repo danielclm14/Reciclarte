@@ -19,7 +19,7 @@ import DefaultProjectCard from "examples/Cards/ProjectCards/DefaultProjectCard";
 import PlaceholderCard from "examples/Cards/PlaceholderCard";
 
 // Overview page components
-import Header from "layouts/perfil/components/Header";
+import Header from "layouts/perfilEmpresa/components/Header";
 
 // Data
 
@@ -35,12 +35,12 @@ function Overview() {
           <Grid item xs={12} md={6} xl={4}>
             <ProfileInfoCard
               title="Meu Perfil"
-              description="A madeira do lixo é a mais bonita. "
+              description="A Madereira dois irmãos tem o prazer  de participar desse projeto "
               info={{
-                fullName: "Lindomar",
-                mobile: "(81) 99616-1403",
-                email: "lindomar@gmail.com",
-                location: "Rua da Moeda, 232",
+                fullName: "Madereira Dois Irmãos",
+                mobile: "(81) 997845-4488",
+                email: "madereira@gmail.com",
+                location: "Rua do Amor, 452",
               }}
               social={[
                 {
@@ -70,12 +70,12 @@ function Overview() {
           <SoftBox pt={2} px={2}>
             <SoftBox mb={0.5}>
               <SoftTypography variant="h6" fontWeight="medium">
-                Suas Reservas
+                Meus Registros
               </SoftTypography>
             </SoftBox>
             <SoftBox mb={1}>
               <SoftTypography variant="button" fontWeight="regular" color="text">
-                Aqui estão suas reservas de madeira:
+                Aqui estão meus registros de madeira:
               </SoftTypography>
             </SoftBox>
           </SoftBox>
@@ -98,7 +98,7 @@ function Overview() {
               </Grid>
               
               <Grid item xs={12} md={6} xl={3}>
-                <PlaceholderCard title={{ variant: "h5", text: "Novo Pedido" }} outlined />
+                <PlaceholderCard title={{ variant: "h5", text: "Inserir Madeira" }} outlined />
               </Grid>
             </Grid>
           </SoftBox>
