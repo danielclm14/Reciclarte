@@ -39,6 +39,7 @@ Coded by www.creative-tim.com
 import Home from "layouts/home";
 import Inserir from "layouts/inserirItem"
 import Itens from "layouts/itens";
+import ItensY from "layouts/itensY";
 import Billing from "layouts/billing";
 //import VirtualReality from "layouts/virtual-reality";
 //import RTL from "layouts/rtl";
@@ -84,6 +85,16 @@ const routes = [
     // icon: <Office size="12px" />,
     component: <Itens />,
     // noCollapse: true,
+  },
+  {//descriçao do item madereira Y
+    // type: "collapse",
+    name: "ItensY",
+    key: "itensY",
+    route: "/itensY",
+    // icon: <Office size="12px" />,
+    component: <ItensY />,
+    // noCollapse: true,
+
   },
   { type: "title", title: "página da conta", key: "account-pages" },
   {//perfil artesao
