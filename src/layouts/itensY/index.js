@@ -18,33 +18,45 @@ import Card from "@mui/material/Card";
 
 // Soft UI Dashboard React components
 import SoftBox from "components/SoftBox";
-
+import SoftTypography from "components/SoftTypography";
 
 // Soft UI Dashboard React examples
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
-
+import Footer from "examples/Footer";
 
 
 // Data
 import Grid from "@mui/material/Grid";
-//-------
-import Formulario from "../../components/Formulario/formulario"
-import Formulario1 from "../../components/Formulario1/Formulario1"
+//import pinus3 from "../../imagens/pinus3.jpg";
+import pinus6 from "../../imagens/pinus6.jpg";
+//import DefaultProjectCard from "../../examples/Cards/ProjectCards/DefaultProjectCard"
+import Descricao1 from "../../examples/Cards/ProjectCards/Descricao1/Descricao1";
+import Descricao from "../../examples/Cards/StatisticsCards/Descricao/Descricao";
+import PopUp from "../../components/PopUp/PopUp";
+import Botao from "../../components/SoftButton/SoftButtonRoot";
+import SoftButton from "../../components/SoftButton";
 
-function Inserir() {
+
+function Itens() {
   
+
   return (
     <DashboardLayout>
       <DashboardNavbar />
       <SoftBox py={3}>
-                <Grid container spacing={3}>
-                  <Grid item xs={12} md={2} xl={3}>
-                  <Formulario1 />
-                  </Grid>
-                </Grid>
+          <Descricao 
+              imagem={pinus6} 
+              titulo="Madereireira Y"
+              endereco="Endereço" 
+              tipo="Pinus " 
+              distancia=" 10 KM" 
+              comprimento="4x3x2"/>
+              
       </SoftBox>
+      
     </DashboardLayout>
   );
 }
-export default Inserir;
+
+export default Itens;
