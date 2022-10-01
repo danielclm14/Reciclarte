@@ -39,11 +39,12 @@ export default class NameForm extends React.Component {
           </select>
         </label>
         <label>
+        
+            <h3>Disponibilidade:</h3>
+            <label>
             Domingo
             <input type="text" value={this.state.value} onChange={this.handleChange} />
           </label>
-            <h3>Disponibilidade:</h3>
-            <label>
             Segunda 
             <input type="text" value={this.state.value} onChange={this.handleChange} />
           </label><br/>
