@@ -24,7 +24,7 @@ export default props  => (<div className="corpo">
                 <p> 30 sacos de 3kg </p>
                 <h3 >Quais os dias disponiveis? </h3>
                 <p> Domingo: - <br />
-                    Segunda-feira: 09:00 - 18:00   19:00 - 20:00<br />
+                    Segunda-feira: 09:00 - 18:00 | 19:00 - 20:00<br />
                     Terça-feira: 09:00 - 18:00<br />
                     Quarta-feira: 09:00 - 18:00<br />
                     Quinta-feira: 09:00 - 18:00<br />

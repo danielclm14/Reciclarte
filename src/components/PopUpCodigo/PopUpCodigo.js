@@ -1,6 +1,5 @@
 import React, { Component }  from 'react';
-import PopUpCodigo from "../PopUpCodigo/PopUpCodigo"
-import BotaoCodigo from "../BotaoCodigo/BotaoCodigo"
+
 
 
 export default class PopUp extends React.Component {
@@ -69,20 +68,12 @@ export default class PopUp extends React.Component {
   submeter() {
     let retorno = {data:this.data, quantidade:this.value,};
     
-    if(this.validar())
     this.props.fechar(retorno);
-     
   }
 
   fechar() {
     let retorno = {data: this.data, quantidade: -1,}
     this.props.fechar(retorno);
-  }
-
-  abrirpopup(){
-    return( 
-    < PopUpCodigo />
-    );
   }
 
   increment() {
@@ -201,29 +192,24 @@ export default class PopUp extends React.Component {
       <div style={styles_bkg}>
       <div style={styles_box}>
         <div style={{position: 'absolute'}}> <button onClick={this.fechar} style={style_fechar}>⨉</button> </div>
-          Escolha a data
-          <input
-              type="date"
-              onChange={evt => this.atualizar_data(evt)}
-              style={styles_input}
-          />
+          Código de Reserva
+          <input 
+              type="text"
+              value="465654"
+              style={{textAlign:"center"}}
+           />
+
           <span style={{color:"red", fontSize:"10px"}}>
             {this.state.warn1}
           </span>
 
-          Quantidade de sacos
+          <p>Informe seu código na retirada do produto</p>
           
-          <div style={input_number}>
-            <button style={input_number_button} onClick={this.decrement}>&minus;</button>
-            <span>{this.value}</span>
-            <button style={input_number_button} onClick={this.increment}>&#43;</button>     
-          </div>
           <span style={{color:"red", fontSize:"10px"}}>
             {this.state.warn2}
           </span>
           {/*<br/>*/}
-          {/* <button style={styles_btn} onClick={this.submeter}>Vrau</button> */}
-          <BotaoCodigo />
+          <button style={styles_btn} onClick={this.submeter}>OK</button>
       </div>
     </div>
     );
