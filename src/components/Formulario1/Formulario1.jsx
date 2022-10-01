@@ -30,14 +30,10 @@ export default class NameForm extends React.Component {
 <form action="#" method="post" onSubmit={this.handleSubmit}>
     <fieldset>
         <fieldset class="grupo">
-        <div class="campo">
-                <label for="nome" >Tamanho</label>
-                <input type="text" id="nome" name="nome"   placeholder="4x3x2"/>
+            <div class="campo">
+                <label for="tamanho" >Tamanho</label>
+                <input type="text" id="tamanho" name="tamanho"   placeholder="4x3x2"/>
             </div> 
-            {/* <div class="campo">
-                <label for="snome">Quantidade</label>
-                <input type="text" id="snome" name="snome"   placeholder="" />
-            </div> */}
             <div class="campo">
                 <label for="qtsaco">Quantidade de Sacos</label>
                 <select name="qtsaco" id="qtsaco">
@@ -60,29 +56,12 @@ export default class NameForm extends React.Component {
                 </select>
             </div>
         </fieldset>
-        {/* <div class="campo">
-            <label>Sexo</label>
-            <label>
-                <input type="radio" name="sexo" value="masculino" /> Masculino
-            </label>
-            <label>
-                <input type="radio" name="sexo" value="feminino" /> Feminino
-            </label>
-        </div> */}
-        {/* <div class="campo">
-            <label for="email">E-mail</label>
-            <input type="text" id="email" name="email"  value="" />
-        </div>
         <div class="campo">
-            <label for="telefone">Telefone</label>
-            <input type="text" id="telefone" name="telefone"  value="" />
-        </div> */}
-
+                <label for="observacao" >Observação</label>
+                <input type="text" id="observacao" name="observacao"   placeholder="Falar com José"/>
+            </div> 
         <fieldset class="grupo">
-            {/* <div class="campo">
-                <label for="cidade">Cidade</label>
-                <input type="text" id="cidade" name="cidade"  value="" />
-            </div> */}
+            
             <div class="campo">
                 <label for="estado">Tipo de Madeira</label>
                 <select name="estado" id="estado">
@@ -91,23 +70,7 @@ export default class NameForm extends React.Component {
                 </select>
             </div>
         </fieldset>
-
-        {/* <div class="campo">
-            <label for="mensagem">Mensagem</label>
-            <textarea rows="6"  id="mensagem" name="mensagem"></textarea>
-        </div> */}
-
-        {/* <div class="campo">
-            <label>Newsletter</label>
-            <label>
-                <input type="checkbox" name="newsletter" value="1" /> Gostaria de receber a Newsletter da empresa
-            </label>
-        </div> */}
         <h4>Disponibilidade:</h4>
-        {/* <div class="campo">
-                <label for="snome">Domingo</label>
-                <input type="text" id="snome" name="snome"  value="" />
-        </div> */}
 
         <div class="campo">
                 <label for="domingo">Domingo</label>
@@ -121,8 +84,8 @@ export default class NameForm extends React.Component {
                 </select>
         </div>
         <div class="campo">
-                <label for="domingo">Segunda-feira</label>
-                <select name="domingo" id="domingo">
+                <label for="segunda">Segunda-feira</label>
+                <select name="segunda" id="segunda">
                     <option value="">--</option>
                     <option value="08h - 12h">08h - 12h</option>
                     <option value="09h - 12h">09h - 12h</option>
@@ -132,8 +95,8 @@ export default class NameForm extends React.Component {
                 </select>
         </div>
         <div class="campo">
-                <label for="domingo">Terça-feira</label>
-                <select name="domingo" id="domingo">
+                <label for="terca">Terça-feira</label>
+                <select name="terca" id="terca">
                     <option value="">--</option>
                     <option value="08h - 12h">08h - 12h</option>
                     <option value="09h - 12h">09h - 12h</option>
@@ -143,8 +106,8 @@ export default class NameForm extends React.Component {
                 </select>
         </div>
         <div class="campo">
-                <label for="domingo">Quarta-feira</label>
-                <select name="domingo" id="domingo">
+                <label for="quarta">Quarta-feira</label>
+                <select name="quarta" id="quarta">
                     <option value="">--</option>
                     <option value="08h - 12h">08h - 12h</option>
                     <option value="09h - 12h">09h - 12h</option>
@@ -154,8 +117,8 @@ export default class NameForm extends React.Component {
                 </select>
         </div>
         <div class="campo">
-                <label for="domingo">Quinta-feira</label>
-                <select name="domingo" id="domingo">
+                <label for="quinta">Quinta-feira</label>
+                <select name="quinta" id="quinta">
                     <option value="">--</option>
                     <option value="08h - 12h">08h - 12h</option>
                     <option value="09h - 12h">09h - 12h</option>
@@ -165,8 +128,8 @@ export default class NameForm extends React.Component {
                 </select>
         </div>
         <div class="campo">
-                <label for="domingo">Sexta-feira</label>
-                <select name="domingo" id="domingo">
+                <label for="sexta">Sexta-feira</label>
+                <select name="sexta" id="sexta">
                     <option value="">--</option>
                     <option value="08h - 12h">08h - 12h</option>
                     <option value="09h - 12h">09h - 12h</option>
@@ -176,8 +139,8 @@ export default class NameForm extends React.Component {
                 </select>
         </div>
         <div class="campo">
-                <label for="domingo">Sábado</label>
-                <select name="domingo" id="domingo">
+                <label for="sabado">Sábado</label>
+                <select name="sabado" id="sabado">
                     <option value="">--</option>
                     <option value="08h - 12h">08h - 12h</option>
                     <option value="09h - 12h">09h - 12h</option>
