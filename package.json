@@ -1,5 +1,6 @@
 {
-  "name": "soft-ui-dashboard-react",
+  "homepage": "https://erbert-gadelha.github.io/teste_react/",
+  "name": "Reciclarte",
   "version": "4.0.0",
   "author": "Creative Tim",
   "license": "SEE LICENSE IN <https://www.creative-tim.com/license>",
@@ -48,7 +49,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
-    "install:peer-deps": "npm install --legacy-peer-deps"
+    "install:peer-deps": "npm install --legacy-peer-deps",
+    
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -75,6 +79,7 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.30.1",
     "eslint-plugin-react-hooks": "4.6.0",
+    "gh-pages": "^4.0.0",
     "prettier": "2.7.1"
   }
 }
