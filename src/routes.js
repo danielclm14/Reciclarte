@@ -57,6 +57,7 @@ import SpaceShip from "examples/Icons/SpaceShip";
 import CustomerSupport from "examples/Icons/CustomerSupport";
 import CreditCard from "examples/Icons/CreditCard";
 import Cube from "examples/Icons/Cube";
+import Basket from "examples/Icons/Basket";
 
 const routes = [
   {
@@ -73,16 +74,16 @@ const routes = [
     name: "Inserir Madeira",
     key: "inserir",
     route: "/inserirItem",
-    icon: <Shop size="12px" />,
+    icon: <Basket size="12px" />,
     component: <Inserir />,
     noCollapse: true,
   },
   { //descriçao do item madereira x
-    // type: "collapse",
+    type: "collapse",
     name: "Itens",
     key: "itens",
     route: "/itens",
-    // icon: <Office size="12px" />,
+    icon: <Cube size="12px" />,
     component: <Itens />,
     // noCollapse: true,
   },
