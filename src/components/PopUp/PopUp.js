@@ -204,7 +204,7 @@ export default class PopUp extends React.Component {
         {this.state.warn2}
       </span>
       {/*<br/>*/}
-      <button style={styles_btn} onClick={this.submeter}>Vrau</button>
+      <button style={styles_btn} onClick={this.submeter}>Reservar</button>
       {/*<BotaoCodigo />*/}
   </div>;
   }
