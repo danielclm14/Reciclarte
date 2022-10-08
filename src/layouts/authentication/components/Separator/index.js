@@ -34,7 +34,7 @@ function Separator() {
         sx={{ transform: "translate(-50%, -60%)" }}
       >
         <SoftTypography variant="button" fontWeight="medium" color="secondary">
-          or
+          ou
         </SoftTypography>
       </SoftBox>
     </SoftBox>

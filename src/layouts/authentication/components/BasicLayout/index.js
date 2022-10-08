@@ -33,15 +33,7 @@ import Footer from "layouts/authentication/components/Footer";
 function BasicLayout({ title, description, image, children }) {
   return (
     <PageLayout>
-      <DefaultNavbar
-        action={{
-          type: "external",
-          route: "https://creative-tim.com/product/soft-ui-dashboard-react",
-          label: "free downl",
-        }}
-        transparent
-        light
-      />
+      
       <SoftBox
         width="calc(100% - 2rem)"
         minHeight="50vh"

@@ -35,6 +35,7 @@ import Separator from "layouts/authentication/components/Separator";
 
 // Images
 import curved6 from "assets/images/curved-images/curved14.jpg";
+import recarte from "assets/images/logo-ctlol.png"
 
 function SignUp() {
   const [agreement, setAgremment] = useState(true);
@@ -43,14 +44,14 @@ function SignUp() {
 
   return (
     <BasicLayout
-      title="Bem-vindo!"
-      description="Use esses formulários incríveis para fazer login ou criar uma nova conta em seu projeto gratuitamente."
-      image={curved6}
+      //title="Bem-vindo!"
+      //description="Use esses formulários incríveis para fazer login ou criar uma nova conta em seu projeto gratuitamente."
+      //image={curved6}
     >
       <Card>
         <SoftBox p={3} mb={1} textAlign="center">
           <SoftTypography variant="h5" fontWeight="medium">
-            Register with
+            Registre-se 
           </SoftTypography>
         </SoftBox>
         <SoftBox mb={2}>
@@ -76,7 +77,7 @@ function SignUp() {
                 onClick={handleSetAgremment}
                 sx={{ cursor: "poiner", userSelect: "none" }}
               >
-                &nbsp;&nbsp;I agree the&nbsp;
+                &nbsp;&nbsp;Aceito os &nbsp;
               </SoftTypography>
               <SoftTypography
                 component="a"
@@ -85,22 +86,22 @@ function SignUp() {
                 fontWeight="bold"
                 textGradient
               >
-                Terms and Conditions
+                Termos e Condições
               </SoftTypography>
             </SoftBox>
             <SoftBox mt={4} mb={1}>
-              <SoftButton variant="gradient" color="dark" fullWidth>
-                sign up
+              <SoftButton variant="gradient" color="success" fullWidth>
+                Inscrever-se
               </SoftButton>
             </SoftBox>
             <SoftBox mt={3} textAlign="center">
               <SoftTypography variant="button" color="text" fontWeight="regular">
-                Already have an account?&nbsp;
+                Já tem uma conta?&nbsp;
                 <SoftTypography
                   component={Link}
                   to="/authentication/sign-in"
                   variant="button"
-                  color="dark"
+                  color="success"
                   fontWeight="bold"
                   textGradient
                 >
