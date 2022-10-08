@@ -89,7 +89,7 @@ function Overview() {
                   description="A madereira X é top"
                   action={{
                     type: "internal",
-                    route: "/itens",
+                    route: "/itensX",
                     color: "success",
                     label: "Mais informações",
                   }}
