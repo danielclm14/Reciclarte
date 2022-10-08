@@ -46,12 +46,12 @@ function SignUp() {
     <BasicLayout
       //title="Bem-vindo!"
       //description="Use esses formulários incríveis para fazer login ou criar uma nova conta em seu projeto gratuitamente."
-      //image={curved6}
+      image={recarte}
     >
       <Card>
         <SoftBox p={3} mb={1} textAlign="center">
           <SoftTypography variant="h5" fontWeight="medium">
-            Registre-se 
+            Registre-se com
           </SoftTypography>
         </SoftBox>
         <SoftBox mb={2}>
@@ -61,13 +61,13 @@ function SignUp() {
         <SoftBox pt={2} pb={3} px={3}>
           <SoftBox component="form" role="form">
             <SoftBox mb={2}>
-              <SoftInput placeholder="Name" />
+              <SoftInput placeholder="Nome" />
             </SoftBox>
             <SoftBox mb={2}>
               <SoftInput type="email" placeholder="Email" />
             </SoftBox>
             <SoftBox mb={2}>
-              <SoftInput type="password" placeholder="Password" />
+              <SoftInput type="password" placeholder="senha" />
             </SoftBox>
             <SoftBox display="flex" alignItems="center">
               <Checkbox checked={agreement} onChange={handleSetAgremment} />
