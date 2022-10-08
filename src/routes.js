@@ -40,9 +40,9 @@ import Home from "layouts/home";
 import Inserir from "layouts/inserirItem"
 import Itens from "layouts/itens";
 import ItensY from "layouts/itensY";
-import Billing from "layouts/billing";
-//import VirtualReality from "layouts/virtual-reality";
-//import RTL from "layouts/rtl";
+import ItensX from "layouts/itensX";
+
+
 import Perfil from "layouts/perfil";
 import PerfilEmpresa from "layouts/perfilEmpresa";
 import SignIn from "layouts/authentication/sign-in";
@@ -55,9 +55,9 @@ import Settings from "examples/Icons/Settings";
 import Document from "examples/Icons/Document";
 import SpaceShip from "examples/Icons/SpaceShip";
 import CustomerSupport from "examples/Icons/CustomerSupport";
-import CreditCard from "examples/Icons/CreditCard";
+
 import Cube from "examples/Icons/Cube";
-import Basket from "examples/Icons/Basket";
+
 
 
 const routes = [
@@ -79,7 +79,7 @@ const routes = [
     component: <Inserir />,
     noCollapse: true,
   },
-  { //descriçao do item madereira x
+  { //tem que deixar isso pra funcionar as imagens
     // type: "collapse",
     name: "Itens",
     key: "itens",
@@ -88,14 +88,24 @@ const routes = [
     component: <Itens />,
     // noCollapse: true,
   },
+  {//descriçao do item madereira X
+    //type: "collapse",
+    name: "ItensX",
+    key: "itensX",
+    route: "/itensX",
+    icon: <Office size="16px" />,
+    component: <ItensX />,
+    noCollapse: true,
+
+  },
   {//descriçao do item madereira Y
-    // type: "collapse",
+    //type: "collapse",
     name: "ItensY",
     key: "itensY",
     route: "/itensY",
-    // icon: <Office size="12px" />,
+    icon: <Office size="12px" />,
     component: <ItensY />,
-    // noCollapse: true,
+    noCollapse: true,
 
   },
   { type: "title", title: "página da conta", key: "account-pages" },
