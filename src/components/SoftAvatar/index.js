@@ -38,7 +38,7 @@ SoftAvatar.propTypes = {
     "transparent",
     "primary",
     "secondary",
-    "info",
+    "success",
     "success",
     "warning",
     "error",

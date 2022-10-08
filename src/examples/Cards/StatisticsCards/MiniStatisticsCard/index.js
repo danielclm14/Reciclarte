@@ -122,7 +122,7 @@ MiniStatisticsCard.propTypes = {
     "white",
     "primary",
     "secondary",
-    "info",
+    "success",
     "success",
     "warning",
     "error",
@@ -137,7 +137,7 @@ MiniStatisticsCard.propTypes = {
     color: PropTypes.oneOf([
       "primary",
       "secondary",
-      "info",
+      "success",
       "success",
       "warning",
       "error",
@@ -147,7 +147,7 @@ MiniStatisticsCard.propTypes = {
     text: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   }),
   icon: PropTypes.shape({
-    color: PropTypes.oneOf(["primary", "secondary", "info", "success", "warning", "error", "dark"]),
+    color: PropTypes.oneOf(["primary", "secondary", "success", "success", "warning", "error", "dark"]),
     component: PropTypes.node.isRequired,
   }).isRequired,
   direction: PropTypes.oneOf(["right", "left"]),

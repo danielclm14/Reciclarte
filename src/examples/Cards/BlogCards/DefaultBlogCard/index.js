@@ -114,7 +114,7 @@ DefaultBlogCard.propTypes = {
       color: PropTypes.oneOf([
         "primary",
         "secondary",
-        "info",
+        "success",
         "success",
         "warning",
         "error",

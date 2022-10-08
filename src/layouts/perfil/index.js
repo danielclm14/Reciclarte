@@ -59,7 +59,7 @@ function Overview() {
                   color: "instagram",
                 },
               ]}
-              action={{ route: "", tooltip: "Edit Profile" }}
+              action={{ route: "", tooltip: "Editar Perfil" }}
             />
           </Grid>
    
@@ -90,7 +90,7 @@ function Overview() {
                   action={{
                     type: "internal",
                     route: "/itens",
-                    color: "info",
+                    color: "success",
                     label: "Mais informações",
                   }}
                

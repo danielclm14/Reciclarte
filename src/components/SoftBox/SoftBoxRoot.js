@@ -40,7 +40,7 @@ export default styled(Box)(({ theme, ownerState }) => {
   const validGradients = [
     "primary",
     "secondary",
-    "info",
+    "success",
     "success",
     "warning",
     "error",
@@ -54,7 +54,7 @@ export default styled(Box)(({ theme, ownerState }) => {
     "black",
     "primary",
     "secondary",
-    "info",
+    "success",
     "success",
     "warning",
     "error",

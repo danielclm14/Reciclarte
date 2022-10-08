@@ -66,14 +66,14 @@ function DefaultInfoCard({ color, icon, title, description, value }) {
 
 // Setting default values for the props of DefaultInfoCard
 DefaultInfoCard.defaultProps = {
-  color: "info",
+  color: "success",
   value: "",
   description: "",
 };
 
 // Typechecking props for the DefaultInfoCard
 DefaultInfoCard.propTypes = {
-  color: PropTypes.oneOf(["primary", "secondary", "info", "success", "warning", "error", "dark"]),
+  color: PropTypes.oneOf(["primary", "secondary", "success", "success", "warning", "error", "dark"]),
   icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string,

@@ -31,7 +31,7 @@ function Invoices() {
         <SoftTypography variant="h6" fontWeight="medium">
           Invoices
         </SoftTypography>
-        <SoftButton variant="outlined" color="info" size="small">
+        <SoftButton variant="outlined" color="success" size="small">
           view all
         </SoftButton>
       </SoftBox>

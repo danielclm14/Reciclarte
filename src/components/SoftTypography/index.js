@@ -52,7 +52,7 @@ SoftTypography.propTypes = {
     "inherit",
     "primary",
     "secondary",
-    "info",
+    "success",
     "success",
     "warning",
     "error",
