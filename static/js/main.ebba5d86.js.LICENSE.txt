@@ -18,13 +18,6 @@
  * limitations under the License.
  */
 
-/*!
- * Chart.js v3.4.1
- * https://www.chartjs.org
- * (c) 2021 Chart.js Contributors
- * Released under the MIT License
- */
-
 /**
  * @license React
  * react-dom.production.min.js
