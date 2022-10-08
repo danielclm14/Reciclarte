@@ -28,7 +28,7 @@ import SoftBox from "components/SoftBox";
 
 // Soft UI Dashboard React examples
 import Sidenav from "examples/Sidenav";
-import Configurator from "examples/Configurator";
+//import Configurator from "examples/Configurator";
 
 // Soft UI Dashboard React themes
 import theme from "assets/theme";
@@ -146,11 +146,11 @@ export default function App() {
               onMouseEnter={handleOnMouseEnter}
               onMouseLeave={handleOnMouseLeave}
             />
-            <Configurator />
-            {configsButton}
+            {/* <Configurator /> */}
+            
           </>
         )}
-        {layout === "vr" && <Configurator />}
+        {layout === "vr"}
         <Routes>
           {getRoutes(routes)}
           <Route path="*" element={<Navigate to="/home" />} />
@@ -170,11 +170,11 @@ export default function App() {
             onMouseEnter={handleOnMouseEnter}
             onMouseLeave={handleOnMouseLeave}
           />
-          <Configurator />
-          {configsButton}
+          {/* <Configurator /> */}
+          
         </>
       )}
-      {layout === "vr" && <Configurator />}
+      {layout === "vr" }
       <Routes>
         {getRoutes(routes)}
         <Route path="*" element={<Navigate to="/home" />} />

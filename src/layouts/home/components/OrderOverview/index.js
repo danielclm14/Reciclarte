@@ -60,7 +60,7 @@ function OrdersOverview() {
           dateTime="21 DEC 11 PM"
         />
         <TimelineItem
-          color="info"
+          color="success"
           icon="shopping_cart"
           title="Server payments for April"
           dateTime="21 DEC 9:34 PM"

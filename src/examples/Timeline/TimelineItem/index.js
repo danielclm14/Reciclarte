@@ -92,7 +92,7 @@ function TimelineItem({ color, icon, title, dateTime, description, badges, lastI
 
 // Setting default values for the props of TimelineItem
 TimelineItem.defaultProps = {
-  color: "info",
+  color: "success",
   badges: [],
   lastItem: false,
   description: "",
@@ -103,7 +103,7 @@ TimelineItem.propTypes = {
   color: PropTypes.oneOf([
     "primary",
     "secondary",
-    "info",
+    "success",
     "success",
     "warning",
     "error",

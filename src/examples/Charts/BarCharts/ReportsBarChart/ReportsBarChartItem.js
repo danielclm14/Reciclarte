@@ -77,9 +77,9 @@ ReportsBarChartItem.defaultProps = {
 
 // Typechecking props for the ReportsBarChartItem
 ReportsBarChartItem.propTypes = {
-  color: PropTypes.oneOf(["primary", "secondary", "info", "success", "warning", "error", "dark"]),
+  color: PropTypes.oneOf(["primary", "secondary", "success", "success", "warning", "error", "dark"]),
   icon: PropTypes.shape({
-    color: PropTypes.oneOf(["primary", "secondary", "info", "success", "warning", "error", "dark"])
+    color: PropTypes.oneOf(["primary", "secondary", "success", "success", "warning", "error", "dark"])
       .isRequired,
     component: PropTypes.node.isRequired,
   }).isRequired,

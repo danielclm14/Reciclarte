@@ -62,14 +62,14 @@ function OutlinedCounterCard({ color, count, title, prefix, suffix }) {
 
 // Setting default values for the props of OutlinedCounterCard
 OutlinedCounterCard.defaultProps = {
-  color: "info",
+  color: "success",
   prefix: "",
   suffix: "",
 };
 
 // Typechecking props for the BlogCard
 OutlinedCounterCard.propTypes = {
-  color: PropTypes.oneOf(["primary", "secondary", "info", "success", "warning", "error", "dark"]),
+  color: PropTypes.oneOf(["primary", "secondary", "success", "success", "warning", "error", "dark"]),
   count: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   title: PropTypes.string.isRequired,
   prefix: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),

@@ -47,7 +47,7 @@ function Configurator() {
   const [controller, dispatch] = useSoftUIController();
   const { openConfigurator, transparentSidenav, fixedNavbar, sidenavColor } = controller;
   const [disabled, setDisabled] = useState(false);
-  const sidenavColors = ["primary", "dark", "info", "success", "warning", "error"];
+  const sidenavColors = ["primary", "dark", "success", "success", "warning", "error"];
 
   // Use the useEffect hook to change the button state for the sidenav type based on window size.
   useEffect(() => {
@@ -95,7 +95,7 @@ function Configurator() {
         px={3}
       >
         <SoftBox>
-          <SoftTypography variant="h5">Soft UI Configurator</SoftTypography>
+          <SoftTypography variant="h5">Soft UI Configurator teste</SoftTypography>
           <SoftTypography variant="body2" color="text">
             See our dashboard options.
           </SoftTypography>
@@ -166,7 +166,7 @@ function Configurator() {
             }}
           >
             <SoftButton
-              color="info"
+              color="success"
               variant={transparentSidenav ? "gradient" : "outlined"}
               onClick={handleTransparentSidenav}
               disabled={disabled}
@@ -179,7 +179,7 @@ function Configurator() {
               Transparent
             </SoftButton>
             <SoftButton
-              color="info"
+              color="success"
               variant={transparentSidenav ? "outlined" : "gradient"}
               onClick={handleWhiteSidenav}
               disabled={disabled}

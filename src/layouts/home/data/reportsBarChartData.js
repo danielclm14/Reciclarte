@@ -25,7 +25,7 @@ const reportsBarChartData = {
       progress: { content: "36K", percentage: 60 },
     },
     {
-      icon: { color: "info", component: "touch_app" },
+      icon: { color: "success", component: "touch_app" },
       label: "clicks",
       progress: { content: "2M", percentage: 90 },
     },

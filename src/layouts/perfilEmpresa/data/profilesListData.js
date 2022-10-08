@@ -28,7 +28,7 @@ const profilesListData = [
     action: {
       type: "internal",
       route: "/pages/profile/profile-overview",
-      color: "info",
+      color: "success",
       label: "reply",
     },
   },
@@ -39,7 +39,7 @@ const profilesListData = [
     action: {
       type: "internal",
       route: "/pages/profile/profile-overview",
-      color: "info",
+      color: "success",
       label: "reply",
     },
   },
@@ -50,7 +50,7 @@ const profilesListData = [
     action: {
       type: "internal",
       route: "/pages/profile/profile-overview",
-      color: "info",
+      color: "success",
       label: "reply",
     },
   },
@@ -61,7 +61,7 @@ const profilesListData = [
     action: {
       type: "internal",
       route: "/pages/profile/profile-overview",
-      color: "info",
+      color: "success",
       label: "reply",
     },
   },
@@ -72,7 +72,7 @@ const profilesListData = [
     action: {
       type: "internal",
       route: "/pages/profile/profile-overview",
-      color: "info",
+      color: "success",
       label: "reply",
     },
   },

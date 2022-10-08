@@ -59,13 +59,14 @@ import CreditCard from "examples/Icons/CreditCard";
 import Cube from "examples/Icons/Cube";
 import Basket from "examples/Icons/Basket";
 
+
 const routes = [
   {
     type: "collapse",
     name: "Madeiras",
     key: "home",
     route: "/home",
-    icon: <Shop size="12px" />,
+    icon: <Shop size="16px" />,
     component: <Home />,
     noCollapse: true,
   },
@@ -74,16 +75,16 @@ const routes = [
     name: "Inserir Madeira",
     key: "inserir",
     route: "/inserirItem",
-    icon: <Basket size="12px" />,
+    icon: <Settings size="16px" />,
     component: <Inserir />,
     noCollapse: true,
   },
   { //descriçao do item madereira x
-    type: "collapse",
+    // type: "collapse",
     name: "Itens",
     key: "itens",
     route: "/itens",
-    icon: <Cube size="12px" />,
+    icon: <Cube size="16px" />,
     component: <Itens />,
     // noCollapse: true,
   },
@@ -103,7 +104,7 @@ const routes = [
     name: "Perfil Artesão",
     key: "perfil",
     route: "/perfil",
-    icon: <CustomerSupport size="12px" />,
+    icon: <CustomerSupport size="16px" />,
     component: <Perfil />,
     noCollapse: true,
   },
@@ -112,7 +113,7 @@ const routes = [
     name: "Perfil Empresa",
     key: "perfilEmpresa",
     route: "/perfilEmpresa",
-    icon: <CustomerSupport size="12px" />,
+    icon: <Office size="16px" />,
     component: <PerfilEmpresa />,
     noCollapse: true,
 
@@ -122,7 +123,7 @@ const routes = [
     name: "Entrar",
     key: "sign-in",
     route: "/authentication/sign-in",
-    icon: <Document size="12px" />,
+    icon: <Document size="16px" />,
     component: <SignIn />,
     noCollapse: true,
   },
@@ -131,7 +132,7 @@ const routes = [
     name: "Cadastre-se",
     key: "sign-up",
     route: "/authentication/sign-up",
-    icon: <SpaceShip size="12px" />,
+    icon: <SpaceShip size="16px" />,
     component: <SignUp />,
     noCollapse: true,
   },

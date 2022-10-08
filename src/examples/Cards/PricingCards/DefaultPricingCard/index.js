@@ -116,7 +116,7 @@ DefaultPricingCard.propTypes = {
     color: PropTypes.oneOf([
       "primary",
       "secondary",
-      "info",
+      "success",
       "success",
       "warning",
       "error",
@@ -137,7 +137,7 @@ DefaultPricingCard.propTypes = {
     color: PropTypes.oneOf([
       "primary",
       "secondary",
-      "info",
+      "success",
       "success",
       "warning",
       "error",
