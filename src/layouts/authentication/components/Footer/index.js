@@ -35,22 +35,22 @@ function Footer() {
           <SoftBox display="flex" justifyContent="center" flexWrap="wrap" mb={3}>
             <SoftBox mr={{ xs: 2, lg: 3, xl: 6 }}>
               <SoftTypography component="a" href="#" variant="body2" color="secondary">
-                Company
+                RecArte
               </SoftTypography>
             </SoftBox>
             <SoftBox mr={{ xs: 2, lg: 3, xl: 6 }}>
               <SoftTypography component="a" href="#" variant="body2" color="secondary">
-                About Us
+                Sobre
               </SoftTypography>
             </SoftBox>
             <SoftBox mr={{ xs: 0, lg: 3, xl: 6 }}>
               <SoftTypography component="a" href="#" variant="body2" color="secondary">
-                Team
+                Time
               </SoftTypography>
             </SoftBox>
             <SoftBox mr={{ xs: 2, lg: 3, xl: 6 }}>
               <SoftTypography component="a" href="#" variant="body2" color="secondary">
-                Product
+                Produto
               </SoftTypography>
             </SoftBox>
             <SoftBox mr={{ xs: 2, lg: 3, xl: 6 }}>
@@ -60,7 +60,7 @@ function Footer() {
             </SoftBox>
             <SoftBox>
               <SoftTypography component="a" href="#" variant="body2" color="secondary">
-                Pricing
+                Preço
               </SoftTypography>
             </SoftBox>
           </SoftBox>
@@ -86,7 +86,7 @@ function Footer() {
         </Grid>
         <Grid item xs={12} lg={8} sx={{ textAlign: "center" }}>
           <SoftTypography variant="body2" color="secondary">
-            Copyright &copy; 2021 Soft by Creative Tim.
+            Copyright &copy; 2022 Soft by RecArte.
           </SoftTypography>
         </Grid>
       </Grid>

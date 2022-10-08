@@ -31,7 +31,8 @@ import SoftButton from "components/SoftButton";
 import CoverLayout from "layouts/authentication/components/CoverLayout";
 
 // Images
-import curved9 from "assets/images/curved-images/curved-6.jpg";
+//import curved9 from "assets/images/curved-images/curved-6.jpg";
+import recarte from "assets/images/logo-ctlol.png"
 
 function SignIn() {
   const [rememberMe, setRememberMe] = useState(true);
@@ -42,7 +43,7 @@ function SignIn() {
     <CoverLayout
       title="Bem-vindo"
       description="Entre com seu Email e senha"
-      image={curved9}
+      image={recarte}
     >
       <SoftBox component="form" role="form">
         <SoftBox mb={2}>
@@ -56,7 +57,7 @@ function SignIn() {
         <SoftBox mb={2}>
           <SoftBox mb={1} ml={0.5}>
             <SoftTypography component="label" variant="caption" fontWeight="bold">
-              Password
+              Senha
             </SoftTypography>
           </SoftBox>
           <SoftInput type="password" placeholder="Password" />
@@ -69,17 +70,17 @@ function SignIn() {
             onClick={handleSetRememberMe}
             sx={{ cursor: "pointer", userSelect: "none" }}
           >
-            &nbsp;&nbsp;Remember me
+            &nbsp;&nbsp;Lembre-me
           </SoftTypography>
         </SoftBox>
         <SoftBox mt={4} mb={1}>
           <SoftButton variant="gradient" color="success" fullWidth>
-            sign in
+            Entrar
           </SoftButton>
         </SoftBox>
         <SoftBox mt={3} textAlign="center">
           <SoftTypography variant="button" color="text" fontWeight="regular">
-            Don&apos;t have an account?{" "}
+            Não tem uma conta?{" "}
             <SoftTypography
               component={Link}
               to="/autenticação/inscrever-se"
@@ -88,7 +89,7 @@ function SignIn() {
               fontWeight="medium"
               textGradient
             >
-              Sign up
+              Cadastre-se
             </SoftTypography>
           </SoftTypography>
         </SoftBox>
