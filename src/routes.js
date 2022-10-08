@@ -72,7 +72,7 @@ const routes = [
   {
     type: "collapse",
     name: "Inserir Madeira",
-    key: "inserir",
+    key: "inserirItem",
     route: "/inserirItem",
     icon: <Basket size="12px" />,
     component: <Inserir />,
