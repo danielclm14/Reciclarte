@@ -32,6 +32,7 @@ import GradientLineChart from "examples/Charts/LineCharts/GradientLineChart";
 
 // Soft UI Dashboard React base styles
 import typography from "assets/theme/base/typography";
+import List from "@mui/material/List";
 
 // Dashboard layout components
 import BuildByDevelopers from "layouts/home/components/BuildByDevelopers";
@@ -46,120 +47,60 @@ import reportsBarChartData from "layouts/home/data/reportsBarChartData";
 //igor 
 import CardItem from "examples/Cards/StatisticsCards/CardItem/CardItem";
 import pinus1 from '../../imagens/pinus1.png';
-
+//import pinus2 from '../../imagens/pinus2.png';
 import pinus3 from '../../imagens/pinus3.jpg';
 import pinus4 from '../../imagens/pinus4.jpg';
 import pinus5 from '../../imagens/pinus5.jpg';
 import pinus6 from '../../imagens/pinus6.jpg';
 
+
+import { useLocation, NavLink } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
+import routes from "routes";
+import style from "../../layouts/home/style.scss";
+
+const madeiras =  new Array(pinus3, pinus4, pinus5, pinus6, pinus1);
+
+function painel(param) {
+  //var aux = madeiras[param];
+  return (<div>
+            <img src={ madeiras[param%5] }/>
+            <div>
+                <h1>madeira pinus</h1>
+                <span>sacos de 5kg</span>
+                <span>jaboatão dos guararapes</span>
+                <span>madereira do jorge</span>
+            </div>
+        </div>);
+}
+
+
 function Home() {
   const { size } = typography;
   const { chart, items } = reportsBarChartData;
+
+  var index = 0;
+
+  const renderRoutes = routes.map(({ type, name, icon, title, noCollapse, key, route, href }) => {
+    return (<div className="produto">
+                < NavLink to={{'pathname': '/itens'}}                       
+                          state= {{imagem: madeiras[index%5], index: 'precisamos definir os indexes'}}                         
+                  key={key}>
+                    {painel(index++)}
+                </NavLink>
+          </div>);
+  });
 
   return (
     <DashboardLayout>
       <DashboardNavbar />
       <SoftBox py={3}>
         <SoftBox mb={3}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} sm={6} xl={3}>
-            
-            <a href="/itens"><CardItem imagem={pinus3} titulo="Madereireira X" tipo="Pinus " distancia=" 5 KM" comprimento="2x3x4" /></a> 
-            </Grid>
-            <Grid item xs={12} sm={6} xl={3}>
-            <a href="/itensY"><CardItem imagem={pinus6} titulo="Madereireira Y" tipo="Pinus " distancia=" 10 KM" comprimento="4x3x2" /></a>
-
-              {/* <MiniStatisticsCard
-                title={{ text: "today's users" }}
-                count="2,300"
-                percentage={{ color: "success", text: "+3%" }}
-                icon={{ color: "info", component: "public" }}
-              /> */}
-            </Grid>
-            <Grid item xs={12} sm={6} xl={3}>
-            <CardItem imagem={pinus4} titulo="Madereireira Z" tipo="Pinus " distancia=" 15 KM" comprimento="5x4x3" />
-
-            </Grid>
-            <Grid item xs={12} sm={6} xl={3}>
-            <CardItem imagem={pinus5} titulo="Madereireira R" tipo="Pinus " distancia=" 20 KM" comprimento="1x2x3" />
-
-            </Grid>
-            <Grid item xs={12} sm={6} xl={3}>
-            <a href="/itens"><CardItem imagem={pinus3} titulo="Madereireira X" tipo="Pinus " distancia=" 5 KM" comprimento="2x3x4" /></a> 
-
-            </Grid>
-            
-            <Grid item xs={12} sm={6} xl={3}>
-            <a href="/itensY"><CardItem imagem={pinus6} titulo="Madereireira Y" tipo="Pinus " distancia=" 10 KM" comprimento="4x3x2" /></a>
-
-            </Grid>
-            <Grid item xs={12} sm={6} xl={3}>
-            <CardItem imagem={pinus4} titulo="Madereireira Z" tipo="Pinus " distancia=" 15 KM" comprimento="5x4x3" />
-
-            </Grid>
-            <Grid item xs={12} sm={6} xl={3}>
-            <CardItem imagem={pinus5} titulo="Madereireira R" tipo="Pinus " distancia=" 20 KM" comprimento="1x2x3" />
-
-            </Grid>
-
-          </Grid>
+          <div className="teste-grid">
+            {renderRoutes}
+          </div>
         </SoftBox>
-        {/* <SoftBox mb={3}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} lg={7}>
-              <BuildByDevelopers />
-            </Grid>
-            <Grid item xs={12} lg={5}>
-              <WorkWithTheRockets />
-            </Grid>
-          </Grid>
-        </SoftBox> */}
-        {/* <SoftBox mb={3}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} lg={5}>
-              <ReportsBarChart
-                title="active users"
-                description={
-                  <>
-                    (<strong>+23%</strong>) than last week
-                  </>
-                }
-                chart={chart}
-                items={items}
-              />
-            </Grid>
-            <Grid item xs={12} lg={7}>
-              <GradientLineChart
-                title="Sales Overview"
-                description={
-                  <SoftBox display="flex" alignItems="center">
-                    <SoftBox fontSize={size.lg} color="success" mb={0.3} mr={0.5} lineHeight={0}>
-                      <Icon className="font-bold">arrow_upward</Icon>
-                    </SoftBox>
-                    <SoftTypography variant="button" color="text" fontWeight="medium">
-                      4% more{" "}
-                      <SoftTypography variant="button" color="text" fontWeight="regular">
-                        in 2021
-                      </SoftTypography>
-                    </SoftTypography>
-                  </SoftBox>
-                }
-                height="20.25rem"
-                chart={gradientLineChartData}
-              />
-            </Grid>
-          </Grid>
-        </SoftBox> */}
-        {/* <Grid container spacing={3}>
-          <Grid item xs={12} md={6} lg={8}>
-            <Projects />
-          </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <OrderOverview />
-          </Grid>
-        </Grid> */}
       </SoftBox>
-      {/* <Footer /> */}
     </DashboardLayout>
   );
 }

@@ -1,0 +1,90 @@
+/*
+ *
+ *  TO USANDO FLEX AO
+ *  INVEZ DE GRID ~~corrigir!!!
+*/
+
+
+.produto {
+
+    background-color: transparent;
+    width: 19%;
+
+    div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+
+
+        div {
+            width: 100%;
+            background-color: white;
+            border: solid rgb(206, 206, 206) 1px;
+            border-top: none;
+            padding: 3px 10px 20px 10px;
+            margin: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            border-radius: 0 0 15px 15px;
+            -webkit-border-radius: 0 0 15px 15px;
+            -moz-border-radius: 0 0 15px 15px;
+            -ms-border-radius: 0 0 15px 15px;
+            -o-border-radius: 0 0 15px 15px;
+        }
+    }
+
+    img {
+        width:  100%;
+        aspect-ratio: 1 / 1;
+        //height: 200px;
+        border-radius: 15px 15px 0px 0px;
+        -webkit-border-radius: 15px 15px 0px 0px;
+        -moz-border-radius: 15px 15px 0px 0px;
+        -ms-border-radius: 15px 15px 0px 0px;
+        -o-border-radius: 15px 15px 0px 0px;
+}
+
+    h1 {
+        color: black;
+        font-size: 20px;
+        margin: none;
+        padding: none;
+        text-transform: capitalize;
+        font-weight: 700;
+}
+
+    span {
+        color: grey;
+        font-size: 12px;
+        padding: none;
+        border: 0;
+    }
+}
+
+.teste-grid {
+    //display: inline-grid;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+    //padding: 1%;
+    gap: 20px;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .produto {
+        width: 30%;
+        //background-color: red;
+  }
+}
+
+@media (max-width: 600px) {
+    .produto {
+        width: 47%;
+        //background-color: red;
+  }
+}
