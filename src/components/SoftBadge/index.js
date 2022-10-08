@@ -36,7 +36,7 @@ const SoftBadge = forwardRef(
 
 // Setting default values for the props of SoftBadge
 SoftBadge.defaultProps = {
-  color: "info",
+  color: "success",
   variant: "gradient",
   size: "sm",
   circular: false,
@@ -51,7 +51,7 @@ SoftBadge.propTypes = {
   color: PropTypes.oneOf([
     "primary",
     "secondary",
-    "info",
+    "success",
     "success",
     "warning",
     "error",

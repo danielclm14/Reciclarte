@@ -125,7 +125,7 @@ function IllustrationLayout({ color, header, title, description, illustration, c
 
 // Setting default values for the props of IllustrationLayout
 IllustrationLayout.defaultProps = {
-  color: "info",
+  color: "success",
   header: "",
   title: "",
   description: "",
@@ -134,7 +134,7 @@ IllustrationLayout.defaultProps = {
 
 // Typechecking props for the IllustrationLayout
 IllustrationLayout.propTypes = {
-  color: PropTypes.oneOf(["primary", "secondary", "info", "success", "warning", "error", "dark"]),
+  color: PropTypes.oneOf(["primary", "secondary", "success", "success", "warning", "error", "dark"]),
   header: PropTypes.node,
   title: PropTypes.string,
   description: PropTypes.string,

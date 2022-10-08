@@ -56,7 +56,7 @@ const projectsTableData = {
           working
         </SoftTypography>
       ),
-      completion: <Completion value={60} color="info" />,
+      completion: <Completion value={60} color="success" />,
       action,
     },
     {
@@ -116,7 +116,7 @@ const projectsTableData = {
           working
         </SoftTypography>
       ),
-      completion: <Completion value={80} color="info" />,
+      completion: <Completion value={80} color="success" />,
       action,
     },
     {

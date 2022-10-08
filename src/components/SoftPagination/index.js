@@ -66,7 +66,7 @@ const SoftPagination = forwardRef(
 SoftPagination.defaultProps = {
   item: false,
   variant: "gradient",
-  color: "info",
+  color: "success",
   size: "medium",
   active: false,
 };
@@ -79,7 +79,7 @@ SoftPagination.propTypes = {
     "white",
     "primary",
     "secondary",
-    "info",
+    "success",
     "success",
     "warning",
     "error",

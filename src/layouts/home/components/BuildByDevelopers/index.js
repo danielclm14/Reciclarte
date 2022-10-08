@@ -82,7 +82,7 @@ function BuildByDevelopers() {
               display="grid"
               justifyContent="center"
               alignItems="center"
-              bgColor="info"
+              bgColor="success"
               borderRadius="lg"
               variant="gradient"
             >

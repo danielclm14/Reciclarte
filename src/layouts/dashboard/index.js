@@ -72,7 +72,7 @@ function Dashboard() {
                 title={{ text: "today's users" }}
                 count="2,300"
                 percentage={{ color: "success", text: "+3%" }}
-                icon={{ color: "info", component: "public" }}
+                icon={{ color: "success", component: "public" }}
               /> */}
             </Grid>
             <Grid item xs={12} sm={6} xl={3}>

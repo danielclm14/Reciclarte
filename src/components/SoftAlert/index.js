@@ -65,7 +65,7 @@ function SoftAlert({ color, dismissible, children, ...rest }) {
 
 // Setting default values for the props of SoftAlert
 SoftAlert.defaultProps = {
-  color: "info",
+  color: "success",
   dismissible: false,
 };
 
@@ -74,7 +74,7 @@ SoftAlert.propTypes = {
   color: PropTypes.oneOf([
     "primary",
     "secondary",
-    "info",
+    "success",
     "success",
     "warning",
     "error",

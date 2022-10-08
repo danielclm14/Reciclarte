@@ -72,7 +72,7 @@ function SidenavCollapse({ color, icon, name, children, active, noCollapse, open
 
 // Setting default values for the props of SidenavCollapse
 SidenavCollapse.defaultProps = {
-  color: "info",
+  color: "success",
   active: false,
   noCollapse: false,
   children: false,
@@ -81,7 +81,7 @@ SidenavCollapse.defaultProps = {
 
 // Typechecking props for the SidenavCollapse
 SidenavCollapse.propTypes = {
-  color: PropTypes.oneOf(["primary", "secondary", "info", "success", "warning", "error", "dark"]),
+  color: PropTypes.oneOf(["primary", "secondary", "success", "success", "warning", "error", "dark"]),
   icon: PropTypes.node.isRequired,
   name: PropTypes.string.isRequired,
   children: PropTypes.node,

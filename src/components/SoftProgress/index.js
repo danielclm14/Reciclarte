@@ -44,7 +44,7 @@ const SoftProgress = forwardRef(({ variant, color, value, label, ...rest }, ref)
 // Setting default values for the props of SoftProgress
 SoftProgress.defaultProps = {
   variant: "contained",
-  color: "info",
+  color: "success",
   value: 0,
   label: false,
 };
@@ -55,7 +55,7 @@ SoftProgress.propTypes = {
   color: PropTypes.oneOf([
     "primary",
     "secondary",
-    "info",
+    "success",
     "success",
     "warning",
     "error",

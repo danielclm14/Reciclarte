@@ -119,7 +119,7 @@ function DefaultNavbar({ transparent, light, action }) {
                 component={Link}
                 to={action.route}
                 variant="gradient"
-                color={action.color ? action.color : "info"}
+                color={action.color ? action.color : "success"}
                 size="small"
                 circular
               >
@@ -134,7 +134,7 @@ function DefaultNavbar({ transparent, light, action }) {
                 target="_blank"
                 rel="noreferrer"
                 variant="gradient"
-                color={action.color ? action.color : "info"}
+                color={action.color ? action.color : "success"}
                 size="small"
                 circular
               >
@@ -178,7 +178,7 @@ DefaultNavbar.propTypes = {
       color: PropTypes.oneOf([
         "primary",
         "secondary",
-        "info",
+        "success",
         "success",
         "warning",
         "error",

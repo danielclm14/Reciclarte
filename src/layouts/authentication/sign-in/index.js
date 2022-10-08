@@ -73,7 +73,7 @@ function SignIn() {
           </SoftTypography>
         </SoftBox>
         <SoftBox mt={4} mb={1}>
-          <SoftButton variant="gradient" color="info" fullWidth>
+          <SoftButton variant="gradient" color="success" fullWidth>
             sign in
           </SoftButton>
         </SoftBox>
@@ -84,7 +84,7 @@ function SignIn() {
               component={Link}
               to="/autenticação/inscrever-se"
               variant="button"
-              color="info"
+              color="success"
               fontWeight="medium"
               textGradient
             >

@@ -53,7 +53,7 @@ SoftButton.propTypes = {
     "white",
     "primary",
     "secondary",
-    "info",
+    "success",
     "success",
     "warning",
     "error",
