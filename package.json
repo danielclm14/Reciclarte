@@ -1,5 +1,5 @@
 {
-  "homepage": "https://erbert-gadelha.github.io/my-app",
+  "homepage": "https://danielclm14.github.io/reciclarte",
   "name": "Reciclarte",
   "version": "4.0.0",
   "author": "Creative Tim",
@@ -36,7 +36,7 @@
     "react-dom": "18.2.0",
     "react-flatpickr": "3.10.13",
     "react-router-dom": "6.3.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "sass": "^1.55.0",
     "stylis": "4.1.1",
     "stylis-plugin-rtl": "2.1.1",

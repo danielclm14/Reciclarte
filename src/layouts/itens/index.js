@@ -13,54 +13,38 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// @mui material components
-import Card from "@mui/material/Card";
-
 // Soft UI Dashboard React components
 import SoftBox from "components/SoftBox";
-import SoftTypography from "components/SoftTypography";
 
 // Soft UI Dashboard React examples
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
-import Footer from "examples/Footer";
 
+// Router properties
+import {Link, useParams, useLocation} from 'react-router-dom'
 
 // Data
 import Grid from "@mui/material/Grid";
-import pinus3 from "../../imagens/pinus3.jpg";
-//import DefaultProjectCard from "../../examples/Cards/ProjectCards/DefaultProjectCard"
-import Descricao1 from "../../examples/Cards/ProjectCards/Descricao1/Descricao1";
 import Descricao from "../../examples/Cards/StatisticsCards/Descricao/Descricao";
-import PopUp from "../../components/PopUp/PopUp";
-import Botao from "../../components/SoftButton/SoftButtonRoot";
-import SoftButton from "../../components/SoftButton";
-
-import {Link, useParams, useLocation} from 'react-router-dom'
-
-    /*function App(){
-      let location = useLocation();
-      console.log(location)
-      return <h2>...</h2>
-    }*/
+import madeiras from '../../dados_itens'
 
 
 
 function Itens() {
-  
-  const location = useLocation();
+  var temp = madeiras[useLocation().state.id];
 
   return (
     <DashboardLayout>
       <DashboardNavbar />
       <SoftBox py={3}>
           <Descricao 
-              imagem={location.state.imagem} 
-              titulo="Madereireira X"
-              endereco="Endereço" 
-              tipo="Pinus " 
-              distancia=" 5 KM" 
-              comprimento="2x3x4"/>
+              imagem={temp.img} 
+              titulo={temp.name}
+              endereco={temp.src}
+              tipo={temp.tipo}
+              distancia=" 5 KM"
+              comprimento={temp.descr}
+              quantidade={temp.qntd}/>
               
       </SoftBox>
       

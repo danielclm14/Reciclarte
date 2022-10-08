@@ -19,57 +19,41 @@ import Icon from "@mui/material/Icon";
 
 // Soft UI Dashboard React components
 import SoftBox from "components/SoftBox";
-import SoftTypography from "components/SoftTypography";
 
 // Soft UI Dashboard React examples
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
-import Footer from "examples/Footer";
-import MiniStatisticsCard from "examples/Cards/StatisticsCards/MiniStatisticsCard";
-
-import ReportsBarChart from "examples/Charts/BarCharts/ReportsBarChart";
-import GradientLineChart from "examples/Charts/LineCharts/GradientLineChart";
 
 // Soft UI Dashboard React base styles
 import typography from "assets/theme/base/typography";
 import List from "@mui/material/List";
-
-// Dashboard layout components
-import BuildByDevelopers from "layouts/home/components/BuildByDevelopers";
-import WorkWithTheRockets from "layouts/home/components/WorkWithTheRockets";
-import Projects from "layouts/home/components/Projects";
-import OrderOverview from "layouts/home/components/OrderOverview";
 
 // Data
 import reportsBarChartData from "layouts/home/data/reportsBarChartData";
 //import gradientLineChartData from "layouts/home/data/gradientLineChartData";
 
 //igor 
-import CardItem from "examples/Cards/StatisticsCards/CardItem/CardItem";
-import pinus1 from '../../imagens/pinus1.png';
-//import pinus2 from '../../imagens/pinus2.png';
-import pinus3 from '../../imagens/pinus3.jpg';
-import pinus4 from '../../imagens/pinus4.jpg';
-import pinus5 from '../../imagens/pinus5.jpg';
-import pinus6 from '../../imagens/pinus6.jpg';
-
 
 import { useLocation, NavLink } from "react-router-dom";
 import { Routes, Route, Navigate } from "react-router-dom";
 import routes from "routes";
 import style from "../../layouts/home/style.scss";
+import { array } from "prop-types";
 
-const madeiras =  new Array(pinus3, pinus4, pinus5, pinus6, pinus1);
+import madeiras from '../../dados_itens'
+
+
 
 function painel(param) {
-  //var aux = madeiras[param];
+  var temp = madeiras[param%(madeiras.length)];
+
   return (<div>
-            <img src={ madeiras[param%5] }/>
+            <img src={ temp.img }/>
             <div>
-                <h1>madeira pinus</h1>
-                <span>sacos de 5kg</span>
-                <span>jaboatão dos guararapes</span>
-                <span>madereira do jorge</span>
+                <h1>{temp.name}</h1>
+                <span>{temp.src}</span>
+                <span>{temp.descr}</span>
+                <span>{temp.local}</span>
             </div>
         </div>);
 }
@@ -83,8 +67,8 @@ function Home() {
 
   const renderRoutes = routes.map(({ type, name, icon, title, noCollapse, key, route, href }) => {
     return (<div className="produto">
-                < NavLink to={{'pathname': '/itens'}}                       
-                          state= {{imagem: madeiras[index%5], index: 'precisamos definir os indexes'}}                         
+                < NavLink to={{'pathname': '/itens'}}   
+                state={madeiras[index%5]}       
                   key={key}>
                     {painel(index++)}
                 </NavLink>
