@@ -47,7 +47,7 @@ import reportsBarChartData from "layouts/home/data/reportsBarChartData";
 //igor 
 import CardItem from "examples/Cards/StatisticsCards/CardItem/CardItem";
 import pinus1 from '../../imagens/pinus1.png';
-
+//import pinus2 from '../../imagens/pinus2.png';
 import pinus3 from '../../imagens/pinus3.jpg';
 import pinus4 from '../../imagens/pinus4.jpg';
 import pinus5 from '../../imagens/pinus5.jpg';
@@ -57,44 +57,50 @@ import pinus6 from '../../imagens/pinus6.jpg';
 import { useLocation, NavLink } from "react-router-dom";
 import { Routes, Route, Navigate } from "react-router-dom";
 import routes from "routes";
-import bolo from "./vitrine";
+import style from "../../layouts/home/style.scss";
+
+const madeiras =  new Array(pinus3, pinus4, pinus5, pinus6, pinus1);
+
+function painel(param) {
+  //var aux = madeiras[param];
+  return (<div>
+            <img src={ madeiras[param%5] }/>
+            <div>
+                <h1>madeira pinus</h1>
+                <span>sacos de 5kg</span>
+                <span>jaboatão dos guararapes</span>
+                <span>madereira do jorge</span>
+            </div>
+        </div>);
+}
 
 
 function Home() {
   const { size } = typography;
   const { chart, items } = reportsBarChartData;
 
-  let aux = "";
+  var index = 0;
+
   const renderRoutes = routes.map(({ type, name, icon, title, noCollapse, key, route, href }) => {
-    return (<NavLink to={'/itens'} key={key}>
-              ww
-              {bolo}
-              <vitrine/>
-              {/*<vitrine name='name' descricao='descr'/>*/}
-          </NavLink>);
+    return (<div className="produto">
+                < NavLink to={{'pathname': '/itens'}}                       
+                          state= {{imagem: madeiras[index%5], index: 'precisamos definir os indexes'}}                         
+                  key={key}>
+                    {painel(index++)}
+                </NavLink>
+          </div>);
   });
-
-
-
 
   return (
     <DashboardLayout>
       <DashboardNavbar />
       <SoftBox py={3}>
         <SoftBox mb={3}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} sm={6} xl={3}>
-            
-
-                { aux = aux++ }
-                { renderRoutes }
-
-          </Grid>
-        </Grid>
-
+          <div className="teste-grid">
+            {renderRoutes}
+          </div>
         </SoftBox>
       </SoftBox>
-      {/* <Footer /> */}
     </DashboardLayout>
   );
 }

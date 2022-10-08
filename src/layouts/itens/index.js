@@ -36,16 +36,26 @@ import PopUp from "../../components/PopUp/PopUp";
 import Botao from "../../components/SoftButton/SoftButtonRoot";
 import SoftButton from "../../components/SoftButton";
 
+import {Link, useParams, useLocation} from 'react-router-dom'
+
+    /*function App(){
+      let location = useLocation();
+      console.log(location)
+      return <h2>...</h2>
+    }*/
+
+
 
 function Itens() {
   
+  const location = useLocation();
 
   return (
     <DashboardLayout>
       <DashboardNavbar />
       <SoftBox py={3}>
           <Descricao 
-              imagem={pinus3} 
+              imagem={location.state.imagem} 
               titulo="Madereireira X"
               endereco="Endereço" 
               tipo="Pinus " 
