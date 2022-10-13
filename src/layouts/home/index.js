@@ -44,44 +44,51 @@ import madeiras from '../../dados_itens'
 
 
 
-function painel(param) {
+
+const painel = (param) => {
+
   var temp = madeiras[param%(madeiras.length)];
 
-  return (<div>
-            <img src={ temp.img }/>
-            <div>
-                <h1>{temp.name}</h1>
-                <span>{temp.src}</span>
-                <span>{temp.descr}</span>
-                <span>{temp.local}</span>
-            </div>
-        </div>);
-}
+  var _break = false;
+  const renderRoutes = routes.map(({ type, name, icon, title, noCollapse, key, route, href }) => {
+    if(_break)
+      return;
+    _break = true;
 
+    return (<div className="produto">
+              < NavLink to={{'pathname': '/itens'}}   
+              state={madeiras[param%(madeiras.length)].id}       
+                key={key}>
+                <div>
+                    <img src={ temp.img }/>
+                    <div>
+                        <h1>{temp.name}</h1>
+                        <span>{temp.src}</span>
+                        <span>{temp.descr}</span>
+                        <span>{temp.local}</span>
+                    </div>
+                </div>
+              </NavLink>
+        </div>);
+    });
+  
+  return renderRoutes;
+}
 
 function Home() {
   const { size } = typography;
   const { chart, items } = reportsBarChartData;
 
-  var index = 0;
-
-  const renderRoutes = routes.map(({ type, name, icon, title, noCollapse, key, route, href }) => {
-    return (<div className="produto">
-                < NavLink to={{'pathname': '/itens'}}   
-                state={madeiras[index%5]}       
-                  key={key}>
-                    {painel(index++)}
-                </NavLink>
-          </div>);
-  });
+  
 
   return (
     <DashboardLayout>
-      <DashboardNavbar />
+      <DashboardNavbar />      
       <SoftBox py={3}>
         <SoftBox mb={3}>
           <div className="teste-grid">
-            {renderRoutes}
+              {/* desenha todas madeiras que tiverem */}
+              {[...madeiras].map((e, i) => painel(i))}
           </div>
         </SoftBox>
       </SoftBox>

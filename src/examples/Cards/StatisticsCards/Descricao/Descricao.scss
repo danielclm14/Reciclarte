@@ -16,6 +16,9 @@
     img{
         width: clamp(165px, 30vw, 250px);
         height: clamp(165px, 30vw, 250px);
+        
+        object-fit: cover;
+        object-position: center;
         border-radius: 5px;
     }
 

@@ -31,7 +31,13 @@ import madeiras from '../../dados_itens'
 
 
 function Itens() {
-  var temp = madeiras[useLocation().state.id];
+  var id = useLocation().state;
+  //window.alert(id);
+
+  if(id == null)
+    id = 0;
+
+  var temp = madeiras[id];
 
   return (
     <DashboardLayout>

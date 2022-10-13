@@ -40,6 +40,10 @@
     img {
         width:  100%;
         aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: center;
+
+
         //height: 200px;
         border-radius: 15px 15px 0px 0px;
         -webkit-border-radius: 15px 15px 0px 0px;

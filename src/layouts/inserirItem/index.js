@@ -37,13 +37,7 @@ function Inserir() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <SoftBox py={3}>
-                <Grid container spacing={3}>
-                  <Grid item xs={12} md={2} xl={3}>
                   <Formulario1 />
-                  </Grid>
-                </Grid>
-      </SoftBox>
     </DashboardLayout>
   );
 }
