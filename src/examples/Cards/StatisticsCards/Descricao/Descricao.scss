@@ -83,14 +83,22 @@ p{
 }
 
 @media only screen and (max-width: 770px) {
+
+
     .corpo {
         display: flex;
         flex-direction: column;
         width: 100%;
 
-        .descr {
-            width: 100%;
-        }
+        .topbar {
+            display: flex;
+            flex-direction: row;
+            padding: none;
+
+            .descr {
+                width: 100%;
+            }
+        }        
 
     }
 

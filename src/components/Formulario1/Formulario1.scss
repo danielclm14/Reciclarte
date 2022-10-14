@@ -12,27 +12,39 @@
     -moz-border-radius:15px;
     -ms-border-radius:15px;
     -o-border-radius:15px;
-    
-    .topbar {
-        width: 100%;
-        height: fit-content;
+
+    .topbar_ {
+
+
+
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex: 1;
+
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgb(231, 231, 231);
+        margin-bottom: 30px;
+
         gap: 20px;
 
-        div {
+        .nome-descr {
             display: flex;
-            //width: 100%;
+            flex: 1;
             flex-direction: column;
             background-color: transparent;
             gap: 10px;
             overflow: auto;
-
             
 
             div {
                 gap: 0px;
                 width: 100%;
+                display: flex;
+                flex-direction: column;
+                
                 input {
                     padding: 2px 2px 2px 5px;
                     
@@ -70,8 +82,6 @@
         .image {
             background-color: grey;
             
-            
-            //flex-grow: 0;
             height: 300px;
             width:  300px;     
             flex-direction: row;
@@ -89,11 +99,11 @@
             button {
                 background-color: brown;
                 color: white;
-                border: none;
+                border: 1px white solid;
                 position: absolute;
             
-                //top: -20px;
-                //right: -132px;
+                top: 0px;
+                right: 0px;
             
                 font-size: 15px;
                 font-weight: 500;
@@ -118,6 +128,137 @@
                 padding: none;
             }
 
+        }
+    }
+
+    .middlebar {
+        div {
+            gap: 0px;
+            display: flex;
+            flex-direction: column;
+            width: min(20em, 100%);
+
+            select {
+                border: none;
+                background-color: transparent;
+                padding: 2px 2px 2px 5px;
+                border-bottom: 1px gray solid;
+                font-size: 17px;
+            }
+
+            select:focus {
+                outline: none;
+            }
+
+            input {
+                padding: 2px 2px 2px 5px;
+                
+                font-size: 0.8em;
+                border: none;
+                border-bottom: 1px gray solid;
+                background-color: transparent;
+            }
+
+            input:focus{
+                outline: none;
+            }
+
+            ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: rgb(187, 187, 187);
+                opacity: 1; /* Firefox */
+            }
+        }
+    }
+
+    .bottombar {
+        margin-top: 30px;
+        border-top: 1px solid rgb(231, 231, 231);
+        padding-top: 20px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgb(231, 231, 231);
+        margin-bottom: 40px;
+
+
+        
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+
+        .horarios {
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            flex: 1;
+            
+            
+            h1 {
+                width: 25%;
+                text-align: center;
+            }
+
+            span {
+                //background-color: yellow;
+                height: 30px;
+                text-align: center;
+                flex: 1;
+            }
+
+        }
+
+        
+        .radios {
+            display: flex;
+            flex-direction: row;
+            align-items:  center;
+            justify-content: center;
+            width: 100%;
+            flex: 1;
+
+            h1 {
+                width: 25%;
+                text-align: end;
+                font-weight: normal;
+                //flex: 1;
+            }
+
+            .checkboxes {
+                //background-color: yellow;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items:  center;
+                height: 30px;
+                flex: 1;
+    
+                input {
+                    height: 70%;
+                    flex: 1;
+                }
+            }
+        }        
+    }
+}
+
+@media (max-width: 600px) {
+    .topbar_ {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse !important ;
+        padding-bottom: 2.5em;
+        //background-color: red;
+
+        div {
+            width: 100%;
+        }
+    }
+
+    .middlebar {
+        div {
+            width: 100%;
         }
     }
 }

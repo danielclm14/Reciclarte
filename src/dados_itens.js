@@ -6,6 +6,7 @@ import pinus5 from './imagens/pinus5.jpg';
 import pinus6 from './imagens/pinus6.jpg';
 
 
+// eslint-disable-next-line no-array-constructor
 var params = new Array(
     {
         id: 0,
@@ -16,6 +17,8 @@ var params = new Array(
         src: 'madereira forte',
         qntd: '30~50 pedaços por dia',
         tipo: 'pinus',
+        size: '2x3x4 cm',
+        disp: null,
     },
   
     {
@@ -27,6 +30,8 @@ var params = new Array(
         src: 'cosme e damião',
         qntd: 'varios sacos todos dias',
         tipo: 'eucalípito',
+        size: '25cm',
+        disp: null,
     },
   
     {
@@ -38,6 +43,8 @@ var params = new Array(
         src: 'dois irmãos',
         qntd: 'uma saca todas as sextas',
         tipo: 'pinus',
+        size: '4 por 2 metros',
+        disp: null,
     },
   
     {
@@ -49,6 +56,8 @@ var params = new Array(
         src: 'ferreira junior',
         qntd: '10 sacas diárias',
         tipo: 'pinus',
+        size: '2x3x4 cm',
+        disp: null,
     },
   
     {
@@ -60,6 +69,8 @@ var params = new Array(
         src: 'souza móveis',
         qntd: 'cerca de 25 pedaços por dia',
         tipo: 'ripas de pinus',
+        size: '2 metros',
+        disp: null,
     }
   );
 
