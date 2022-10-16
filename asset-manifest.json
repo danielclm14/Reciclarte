@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/reciclarte/static/css/main.ca6d7e5d.css",
-    "main.js": "/reciclarte/static/js/main.61eb0114.js",
-    "static/media/pinus1.png": "/reciclarte/static/media/pinus1.e8cc7779474405becfdf.png",
-    "static/media/lindomar.png": "/reciclarte/static/media/lindomar.c8c9bfce86220fe7c973.png",
-    "static/media/curved0.jpg": "/reciclarte/static/media/curved0.d146ec6e9401aa9d52c5.jpg",
-    "static/media/curved14.jpg": "/reciclarte/static/media/curved14.12c9ea54425c4f1bc1d7.jpg",
-    "static/media/pinus3.jpg": "/reciclarte/static/media/pinus3.d8f6aaefc12b13bda565.jpg",
-    "static/media/pinus5.jpg": "/reciclarte/static/media/pinus5.56ad3fc72eba530b0a89.jpg",
-    "static/media/pinus4.jpg": "/reciclarte/static/media/pinus4.9c2cfe0bbd96360e51cd.jpg",
-    "static/media/pinus6.jpg": "/reciclarte/static/media/pinus6.ecef1a64e391c73e8d68.jpg",
-    "static/media/white-curved.jpeg": "/reciclarte/static/media/white-curved.a5b7db662b0b14ab5534.jpeg",
-    "static/media/visa.png": "/reciclarte/static/media/visa.71c0d5e9e2aaee42e4c3.png",
-    "static/media/madereiradoisirmaos.png": "/reciclarte/static/media/madereiradoisirmaos.3f82b230c7237c33ef79.png",
-    "static/media/mastercard.png": "/reciclarte/static/media/mastercard.27fca3e7637a9458fb64.png",
-    "static/media/logo-ctlol.png": "/reciclarte/static/media/logo-ctlol.76483a7d73a8825d2c4e.png",
-    "static/media/bruce-mars.jpg": "/reciclarte/static/media/bruce-mars.45f6477957606abd2f24.jpg",
-    "static/media/team-2.jpg": "/reciclarte/static/media/team-2.e725aef8c892cb21f262.jpg",
-    "static/media/logo-spotify.svg": "/reciclarte/static/media/logo-spotify.3f055cde07c024fb2b73063b46416f1b.svg",
-    "index.html": "/reciclarte/index.html",
-    "main.ca6d7e5d.css.map": "/reciclarte/static/css/main.ca6d7e5d.css.map",
-    "main.61eb0114.js.map": "/reciclarte/static/js/main.61eb0114.js.map"
+    "main.css": "/my-app/static/css/main.df33e471.css",
+    "main.js": "/my-app/static/js/main.6f29b4b2.js",
+    "static/media/pinus1.png": "/my-app/static/media/pinus1.e8cc7779474405becfdf.png",
+    "static/media/lindomar.png": "/my-app/static/media/lindomar.c8c9bfce86220fe7c973.png",
+    "static/media/curved0.jpg": "/my-app/static/media/curved0.d146ec6e9401aa9d52c5.jpg",
+    "static/media/curved14.jpg": "/my-app/static/media/curved14.12c9ea54425c4f1bc1d7.jpg",
+    "static/media/pinus3.jpg": "/my-app/static/media/pinus3.d8f6aaefc12b13bda565.jpg",
+    "static/media/pinus5.jpg": "/my-app/static/media/pinus5.56ad3fc72eba530b0a89.jpg",
+    "static/media/pinus4.jpg": "/my-app/static/media/pinus4.9c2cfe0bbd96360e51cd.jpg",
+    "static/media/pinus6.jpg": "/my-app/static/media/pinus6.ecef1a64e391c73e8d68.jpg",
+    "static/media/white-curved.jpeg": "/my-app/static/media/white-curved.a5b7db662b0b14ab5534.jpeg",
+    "static/media/visa.png": "/my-app/static/media/visa.71c0d5e9e2aaee42e4c3.png",
+    "static/media/madereiradoisirmaos.png": "/my-app/static/media/madereiradoisirmaos.3f82b230c7237c33ef79.png",
+    "static/media/mastercard.png": "/my-app/static/media/mastercard.27fca3e7637a9458fb64.png",
+    "static/media/logo-ctlol.png": "/my-app/static/media/logo-ctlol.76483a7d73a8825d2c4e.png",
+    "static/media/bruce-mars.jpg": "/my-app/static/media/bruce-mars.45f6477957606abd2f24.jpg",
+    "static/media/team-2.jpg": "/my-app/static/media/team-2.e725aef8c892cb21f262.jpg",
+    "static/media/logo-spotify.svg": "/my-app/static/media/logo-spotify.3f055cde07c024fb2b73063b46416f1b.svg",
+    "index.html": "/my-app/index.html",
+    "main.df33e471.css.map": "/my-app/static/css/main.df33e471.css.map",
+    "main.6f29b4b2.js.map": "/my-app/static/js/main.6f29b4b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca6d7e5d.css",
-    "static/js/main.61eb0114.js"
+    "static/css/main.df33e471.css",
+    "static/js/main.6f29b4b2.js"
   ]
 }
