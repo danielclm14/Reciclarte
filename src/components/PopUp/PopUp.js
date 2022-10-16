@@ -1,4 +1,6 @@
 import React, { Component }  from 'react';
+import madeiras from '../../dados_itens';
+import reservas from '../../reservas';
 
 export default class PopUp extends React.Component {
   state = {
@@ -69,6 +71,8 @@ export default class PopUp extends React.Component {
     if(this.validar()) {
       // COMUNICA COM O BACK
       // ABRE O CODIGO DE RESERVA
+
+      new reservas().reservar(this.props.id, 0, this.state.value);
       this.setState({sel_popup:false});
     }
      
@@ -84,8 +88,10 @@ export default class PopUp extends React.Component {
     if(this.value === 0)
       this.setState({warn2: '.'});
 
-    if (this.value >= 100)
+    if (this.value >= madeiras[this.props.id].qntd) {
+      this.value = madeiras[this.props.id].qntd;
       return;
+    }
 
     this.setState({ value: this.value + 1 });
   }

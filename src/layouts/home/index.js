@@ -55,6 +55,9 @@ const painel = (param) => {
       return;
     _break = true;
 
+    if(madeiras[param%(madeiras.length)].qntd == 0)
+      return;
+
     return (<div className="produto">
               < NavLink to={{'pathname': '/itens'}}   
               state={madeiras[param%(madeiras.length)].id}       

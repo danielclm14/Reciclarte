@@ -29,10 +29,15 @@ import Descricao from "../../examples/Cards/StatisticsCards/Descricao/Descricao"
 import madeiras from '../../dados_itens'
 
 
+/*const submeter = (id, qntd) => {
+  madeiras[id].qntd -= qntd;
+}*/
+
+
+
 
 function Itens() {
   var id = useLocation().state;
-  //window.alert(id);
 
   if(id == null)
     id = 0;
@@ -44,6 +49,7 @@ function Itens() {
       <DashboardNavbar />
       <SoftBox py={3}>
           <Descricao 
+              id={id}
               imagem={temp.img} 
               titulo={temp.name}
               endereco={temp.src}

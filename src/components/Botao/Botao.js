@@ -36,7 +36,7 @@ export default class Botao extends React.Component {
           <button onClick={this.abrir}>Reservar</button>
 
           {/*state.hidden define a instancia do popup*/}
-          {this.state.hidden?"":<PopUp fechar={this.fechar}/>}
+          {this.state.hidden?"":<PopUp fechar={this.fechar} id={this.props.id}/>}
         </div>
       );
   }

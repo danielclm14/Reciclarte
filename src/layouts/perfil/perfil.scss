@@ -1,0 +1,106 @@
+
+.item_reservado {
+    background-color: transparent ;
+    border: none;
+    border-bottom: solid 1px rgb(199, 200, 206) ;
+    padding: 0 10px 20px 10px;
+    margin: 20px;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    button {
+        position: absolute;
+        right: 13px;
+        top: 10px;
+        width: 25px;
+        height: 25px;
+        border-radius: 10px;
+        padding: 0;
+        //background-color: transparent;
+        background-color: whitesmoke;
+        color: gray;
+        border: solid 1px gray;
+        font-weight: 900;
+        font-size: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    button:hover {
+        color: red;
+        background-color: pink;
+    }
+}
+
+.item_reservado:last-of-type {
+    border: none;
+}
+
+.representacao {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    
+    img {
+        height: 100px;
+        width: 100px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: center;
+        border: solid rgb(228, 228, 228) 1px;
+    }
+
+
+    div {
+        position: relative;
+        //background-color: pink;
+        flex: 1;
+        padding-left: 10px;        
+    }
+}
+
+@media (max-width: 600px) {
+
+    .item_reservado {
+        padding: 0 10px 10px 10px;
+        margin: 10px;
+    }
+
+    .representacao {
+        //background-color: pink;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 60px;
+            width: 60px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        h1 {
+            font-size: 0.8em;
+            line-height: 0.9em;
+            padding: 0;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 0.5em;
+            line-height: 1em;
+            padding: 0;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 0.5em;
+            line-height: 1em;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

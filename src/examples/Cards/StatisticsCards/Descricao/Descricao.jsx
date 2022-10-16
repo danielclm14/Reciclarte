@@ -13,7 +13,7 @@ export default props  => (<div className="corpo">
                 <h2 className='comprimentoMadeira1'>{props.comprimento}</h2> 
                 <h2 className='tipoMadeira1'>{props.tipo}</h2>
                 <div className="btnReserva">
-                    <Botao />   
+                    <Botao id={props.id}/>   
                 </div>       
             </div>
         </div>

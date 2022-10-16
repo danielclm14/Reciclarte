@@ -20,6 +20,11 @@ import PlaceholderCard from "examples/Cards/PlaceholderCard";
 
 // Overview page components
 import Header from "layouts/perfil/components/Header";
+import madeiras from '../../dados_itens'
+import perfis from '../../dados_artesaos'
+import CardReserva from 'layouts/perfil/card_reservado.js'
+
+
 
 // Data
 
@@ -79,29 +84,16 @@ function Overview() {
               </SoftTypography>
             </SoftBox>
           </SoftBox>
-          <SoftBox p={2}>
-            <Grid container spacing={3}>
-              <Grid item xs={12} md={6} xl={3}>
-                <DefaultProjectCard
-                  image={pinus3}
-                  // label="project #2"
-                  title="Madereira X"
-                  description="A madereira X é top"
-                  action={{
-                    type: "internal",
-                    route: "/itensX",
-                    color: "success",
-                    label: "Mais informações",
-                  }}
-               
-                />
-              </Grid>
+          <div style={{width: '100%', }}>
+            {[...perfis[0].itens].map((e, i) => <CardReserva
+                  id={madeiras[perfis[0].itens[i].id].id}
+                  img={madeiras[perfis[0].itens[i].id].img}
+                  name= {madeiras[perfis[0].itens[i].id].name}
+                  descr= {madeiras[perfis[0].itens[i].id].descr}
+                  qntd= {perfis[0].itens[i].qntd}/>
+            )}
               
-              <Grid item xs={12} md={6} xl={3}>
-                <PlaceholderCard title={{ variant: "h5", text: "Novo Pedido" }} outlined />
-              </Grid>
-            </Grid>
-          </SoftBox>
+          </div>
         </Card>
       </SoftBox>
 
