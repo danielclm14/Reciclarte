@@ -6,9 +6,10 @@ export default class PopUp extends React.Component {
   state = {
     data: '',
     value: 0,
-    warn1: '.',
-    warn2: '.',
+    warn1: '\0',
+    warn2: '\0',
     sel_popup: true,
+    reserva: 0
   }
 
   constructor() {
@@ -49,7 +50,7 @@ export default class PopUp extends React.Component {
       return;
     }
 
-    this.setState({warn1: '.'});
+    this.setState({warn1: '\0'});
 
     // QUANTIDADE NULA
     if(Number(this.value) === 0) {
@@ -72,7 +73,7 @@ export default class PopUp extends React.Component {
       // COMUNICA COM O BACK
       // ABRE O CODIGO DE RESERVA
 
-      new reservas().reservar(this.props.id, 0, this.state.value);
+      this.setState({ reserva: new reservas().reservar(this.props.id, 0, this.state.value)});
       this.setState({sel_popup:false});
     }
      
@@ -86,7 +87,7 @@ export default class PopUp extends React.Component {
   increment() {
 
     if(this.value === 0)
-      this.setState({warn2: '.'});
+      this.setState({warn2: '\0'});
 
     if (this.value >= madeiras[this.props.id].qntd) {
       this.value = madeiras[this.props.id].qntd;
@@ -264,13 +265,14 @@ export default class PopUp extends React.Component {
       };
     //
   
+    //var vlr_reserva = (Math.floor(Math.random() * 2000));
     return (
         <div style={styles_box}>
           <div style={{position: 'absolute'}}> <button onClick={this.fechar} style={style_fechar}>⨉</button> </div>
             Código de Reserva
             <input 
                 type="text"
-                value="465654"
+                value= {this.state.reserva}
                 style={{textAlign:"center"}}
              />
   

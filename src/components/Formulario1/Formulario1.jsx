@@ -169,8 +169,8 @@ export default class NameForm extends React.Component {
                     <div className='middlebar'>
                         <div>
                             tipo de madeira
-                            <select id="tipo" onChange={this.onChange}>
-                                <option value={null}> </option>
+                            <select id="tipo" onChange={this.onChange} >
+                                <option value={null}></option>
                                 <option value="eucalípto">eucalípto</option>
                                 <option value="pinus">pinus</option>
                                 <option value="mdf">mdf</option>
@@ -178,11 +178,11 @@ export default class NameForm extends React.Component {
                         </div>
                         <div>
                             dimensões
-                            <input id="size" type='text' placeholder='3x4x5' onChange={this.onChange}/>
+                            <input id="size" type='text' placeholder='3x4x5 cm' onChange={this.onChange}/>
                         </div>
                         <div>
                             quantidade
-                            <input id="qntd" type='number' min={1} max={200} placeholder='5 sacos' onChange={this.onChange}/>
+                            <input id="qntd" type='number' min={1} max={200} placeholder='5 sacos (3kg cada)' onChange={this.onChange}/>
                         </div> 
                     </div>
                     <div className='bottombar'>

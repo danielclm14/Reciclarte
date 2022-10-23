@@ -55,7 +55,8 @@ function Itens() {
               endereco={temp.src}
               tipo={temp.tipo}
               distancia=" 5 KM"
-              comprimento={temp.descr}
+              descricao={temp.descr}
+              comprimento={temp.size}
               quantidade={temp.qntd}/>
               
       </SoftBox>

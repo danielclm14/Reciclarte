@@ -33,6 +33,7 @@ export default class CardReserva extends React.Component {
                         <h1>{this.props.name}</h1>
                         <h2>{this.props.descr}</h2>
                         <h3>quantidade: {this.props.qntd}</h3>
+                        <span>código de reserva [{this.props.reserva}]</span>
                     </div>
                 </div>
             <button onClick={func} title="remover reserva">╳</button>

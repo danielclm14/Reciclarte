@@ -10,6 +10,15 @@
     flex-direction: row;
     position: relative;
 
+    span {
+        position: absolute;
+        color: gray;
+        font-weight: lighter;
+        font-size: 0.8em;
+        right: 0;
+        bottom: 0;
+    }
+
     button {
         position: absolute;
         right: 13px;
@@ -69,6 +78,14 @@
     .item_reservado {
         padding: 0 10px 10px 10px;
         margin: 10px;
+
+        span {
+            position: absolute;
+            font-weight: lighter;
+            font-size: 0.4em;
+            right: 5px;
+            bottom: -15px;
+        }
     }
 
     .representacao {

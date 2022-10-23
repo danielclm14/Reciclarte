@@ -90,7 +90,8 @@ function Overview() {
                   img={madeiras[perfis[0].itens[i].id].img}
                   name= {madeiras[perfis[0].itens[i].id].name}
                   descr= {madeiras[perfis[0].itens[i].id].descr}
-                  qntd= {perfis[0].itens[i].qntd}/>
+                  qntd= {perfis[0].itens[i].qntd}
+                  reserva= {perfis[0].itens[i].reserva}/>
             )}
               
           </div>
