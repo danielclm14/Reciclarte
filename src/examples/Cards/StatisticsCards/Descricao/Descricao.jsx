@@ -22,7 +22,7 @@ export default props  => (<div className="corpo">
         <div style={{width: '300px', padding:'10px 5px'}}>
             <div className="perguntas1">
                 <h3 >Qual a quantidade disponível? </h3>
-                <p> {props.quantidade} (sacas de 3kg)</p>
+                <p> {props.quantidade} (sacos de 3kg)</p>
                 <h3 >Quais os dias disponiveis? </h3>
                 <p> Domingo: - <br />
                     Segunda-feira: 09:00 - 18:00 | 19:00 - 20:00<br />
