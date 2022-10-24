@@ -42,10 +42,10 @@ function Overview() {
               title="Meu Perfil"
               description="A madeira do lixo é a mais bonita. "
               info={{
-                fullName: "Lindomar",
-                mobile: "(81) 99616-1403",
-                email: "lindomar@gmail.com",
-                location: "Rua da Moeda, 232",
+                Nome: "Lindomar",
+                Telefone: "(81) 99616-1403",
+                Email: "lindomar@gmail.com",
+                Localização: "Rua da Moeda, 232",
               }}
               social={[
                 {

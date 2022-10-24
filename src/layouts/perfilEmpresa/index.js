@@ -38,10 +38,10 @@ function Overview() {
               title="Meu Perfil"
               description="A Madereira dois irmãos tem o prazer  de participar desse projeto "
               info={{
-                fullName: "Madereira Dois Irmãos",
-                mobile: "(81) 997845-4488",
-                email: "madereira@gmail.com",
-                location: "Rua do Amor, 452",
+                Nome: "Madereira Dois Irmãos",
+                Telefone: "(81) 997845-4488",
+                Email: "madereira@gmail.com",
+                Localização: "Rua do Amor, 452",
               }}
               social={[
                 {
