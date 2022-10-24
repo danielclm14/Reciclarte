@@ -25,7 +25,11 @@ export default class reservas {
         }
 
         if(nao_achou) {
-            vlr_reserva = (Math.floor(Math.random() * 2000));
+            // vlr_reserva = (Math.floor(Math.random() * 2000));
+            //vlr_reserva = (Math.floor(Math.random() * 1111111));
+            vlr_reserva = (Math.floor(Math.random() * 1111111));
+            
+            
 
             usuarios[user].itens.push(
             {
